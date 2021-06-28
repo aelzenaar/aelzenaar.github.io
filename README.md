@@ -1,6 +1,15 @@
 # Alexander Elzenaar
 
-## Honours dissertation
+* [Curriculum Vitae](CV.pdf)
+
+## MSc. project
+
+### UoA Dept. of Mathematics Student Research Conference
+
+  * [Extended abstract](kg/srcabstract.pdf)
+  * [Presentation slides](kg/srctalk_shortened.pdf)
+
+## BSc. (hons.) dissertation
   * [Toric Varieties](hons_dissertation/notes.pdf)
   * [Presentation slides](hons_dissertation/honourstalk.pdf)
 
