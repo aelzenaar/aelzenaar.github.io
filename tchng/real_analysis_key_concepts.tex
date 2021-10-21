@@ -1,0 +1,110 @@
+\documentclass[a4paper,twoside]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{OldStandard}
+\usepackage{microtype}
+
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[inline]{enumitem}
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
+\usepackage[english]{babel}
+\usepackage[autostyle, english=british]{csquotes}
+\MakeOuterQuote{"}
+
+\usepackage[backend=biber,style=alphabetic,autocite=inline]{biblatex}
+\addbibresource{biblio.bib}
+\usepackage{makeidx}
+\makeindex
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usetikzlibrary{babel}
+\usetikzlibrary{shapes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{physics}
+
+\usepackage{hyperref}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+
+
+\begin{document}
+  \begin{center}
+    {\huge\textbf{Real Analysis Key Concepts: what you should know for the exam}}
+  \end{center}
+
+  References are to Davidson \& Donsig, \textit{Real analysis and applications}, Springer UTM. UoA link to PDF: \url{https://link-springer-com.ezproxy.auckland.ac.nz/book/10.1007/978-0-387-98098-0}.
+
+  \section{Big ideas}
+  \begin{itemize}
+    \item Limiting processes.
+    \item Continuity.
+    \item Approximation.
+  \end{itemize}
+
+  One of the main points of this course is to show the relationship between \textit{sequential} and \textit{analytic} definitions. E.g. there are three different definitions of continuity:
+  \begin{itemize}
+    \item (analytic) $ f : \R \to \R $ is cts at $ x_0 $ if, for every $ \varepsilon > 0 $, there exists $ \delta > 0 $ such that for all $ x \in \R $, if $ \abs{x-x_0}<\delta $ then $ \abs{f(x)-f(x_0)}<\varepsilon $.
+    \item (sequential) $ f : \R \to \R $ is cts at $ x_0 $ if, for every sequence $ (a_n) $ in $ \R $ with $ a_n \to x_0 $, $ f(a_n) \to f(x_0) $.
+    \item (topological) $ f : \R \to \R $ is cts at $ x_0 $ if, for every open set $ U $ containing $ x_0 $, $ f^{-1}(U) $ is open.
+  \end{itemize}
+  You should be able to prove the equivalence of all three definitions.
+
+  In general everything in this course has at least 2 ways of looking at it (analytic and sequential) and many the third (topological).
+
+  \section{Things you should know}
+  What does `know' mean? - be able to write it down immediately. - be able to justify why it is a necessary and/or important definition. - be able to give 3 examples and 1 counterexample.
+  \begin{itemize}
+    \item Suprema and infima. (two different definitions: both an $ \varepsilon-\delta $ definition and an order-theoretic definition). The archimedian property/the LUB property. [DD \SS2.1--2.3]
+    \item Convergence of a sequence. [D \SS2.4--2.5]
+    \item Cauchy sequences and the relationship between `Cauchy' and `convergent'. [DD \S2.8]
+    \item Series and power series. (All 250 material. Main tool is the Cauchy criterion for series convergence.) [DD ch.3]
+    \item Closed and open sets. (Sequential definitions? Analytic definitions?) [DD \S4,1--4,3]
+    \item Compactness. Again three definitions: $ K $ is compact if (1, analytic) it is a closed and bounded set; (2, sequential) every sequence in $ K $ has a subsequence which converges
+          to a point of $ K $; (3, topological, not so important in this course) for every collection $ \{U_i\}_{i\in I} $ of open sets such that $ K \subseteq \bigcup U_i $, there exist finitely many $ i_1,...,i_N \in I $
+          such that $ K \subseteq \bigcup_{1\leq n \neq N} U_{i_n} $ . [DD \S4.4]
+    \item Definition of continuity. [DD \SS5.1--5.3]
+    \item The big two continuity theorems: the intermediate value theorem and the extreme value theorem.\footnote{These theorems are reflections of the following properties: the
+          IVT says that the image of a connected set is connected; the EVT says that the image of a compact set is compact. Proofs essentially elementary.} [DD \SS5.4,5.6]
+    \item Uniform continuity. Why is it important? Main theorem: functions on a compact set are uniformly continuous. (This is a hard theorem in general which shows the power of the sequential arguments.)
+          Other examples: -linear functions [DD \S5.5]
+    \item Lipschitz continuity. Examples of Lipschitz functions: -linear functions; -functions with bounded derivative (and conversely). Nonexample: non-linear polynomials on $ \R $. Theorem: Lipschitz
+          implies uniformly continuous. Example of uniformly cts but not Lipschitz: $ f : [0,1] \to [0,1] $ defined by $ f(x) = \sqrt{x} $. (Suppose it is $K$-Lipschitz,
+          then $ \abs{\sqrt{0}-\sqrt{1/4K^2}} = 1/2K > 1/4K = K\abs{0 - 1/4K^2} $.) [DD \S5.1]
+    \item Differentiability (definition of). Should be able to prove the product rule, chain rule, etc. [DD\S6.1]
+    \item The mean value theorem. [DD \S6.2]
+    \item Riemann-like integrals: two definitions, (1) via upper and lower sums and integrals, (2) $ \varepsilon-P $ definition (a.k.a. Riemann's condition). Continuous functions on compact sets are Riemann integrable. Converse is not true (e.g. step functions or even worse the Topologist's sine function $ x \mapsto \sin(1/x) $ which is integrable over $(0,1]$ by Riemann's condition argument). Example of non-integrable function: characteristic function of $ \Q $; of the Cantor set; etc. [DD \S6.3]
+    \item The fundamental theorem of calculus (both of them). Other results you should already know from college, like the change-of-variables rule and integration by parts. [DD \S6.4]
+    \item Limits of functions. Pointwise convergence of continuous functions does not imply continuous limit. Uniform convergence of function sequences. [DD \S8.1--8.3]
+    \item Stone-Weirstra\ss{} theorem for polynomials.\footnote{Often you see the more general form, `an algebra $ A $ of cts real-valued functions on a cpct metric space $ X $ that separates points and does not vanish at any point is dense in $ C(X,\R) $.} [DD ch.10]
+  \end{itemize}
+
+  \section{Other useful books.}
+  Books at the level of this course to look at:
+  \begin{itemize}
+    \item Two books on Canvas, including \url{https://www.jirka.org/ra/}
+    \item Spivak's \textit{Calculus}
+  \end{itemize}
+
+  More comprehensive undergraduate books:
+  \begin{itemize}
+    \item Rudin, \textit{Principles of mathematical analysis}
+    \item Loomis and Sternberg, \textit{Advanced calculus} \url{http://people.math.harvard.edu/~shlomo/docs/Advanced_Calculus.pdf}
+    \item Kolmogorov and Fomin, \textit{Introductory real analysis}
+  \end{itemize}
+
+\end{document}
