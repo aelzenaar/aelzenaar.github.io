@@ -11,6 +11,7 @@
   <style>
     body { padding-left: 3em; font-family: 'Zen Kaku Gothic New', sans-serif ; margin-right: 10% }
     div {margin-left:-2em; padding-left:2em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid black; border-radius: 5px;}
+    .fav:before {content:"✵";color:green;font-size:200%}
   </style>
 </head>
 
@@ -28,7 +29,8 @@ but with a less useful organisational structure. <strike>Library call numbers li
 <i>Now that the University of Auckland moved the mathematics research collection off-site in the latest set of library closures and service reductions, I see no reason
 to include library call numbers any more.</i>
 
-<p>It is less a list of reviews, and more a reminder to me about which books I have enjoyed reading and which books I would like to read more of.
+<p>It is less a list of reviews, and more a reminder to me about which books I have enjoyed reading and which books I would like to read more of. I mark my favourite
+books with a green star, <span class="fav">thus</span>.
 
 <p><strong>Disclaimers.</strong> The presence of a book on this list does not mean:
 <ul>
@@ -137,7 +139,7 @@ to include library call numbers any more.</i>
         foreword and initial chapters by Martin Gardner which do cover them to some extent) and is too informal to really be a good introduction to mathematical
         thinking.
         <p>Indeed, my favourite introductory grown-up calculus book is, as you can probably guess, the One True Calculus Book:</li>
-    <li>Michael Spivak, <em>Calculus</em>. Do I really need to say any more? Indeed, this book is more of an introductory real analysis book than a 'standard' calculus
+    <li class="fav">Michael Spivak, <em>Calculus</em>. Do I really need to say any more? Indeed, this book is more of an introductory real analysis book than a 'standard' calculus
         book. I don't believe any university in NZ actually uses it as a course text in first year (or at all), but that is no excuse for students not to use it
         (there always seems to be at least one copy out of the general library despite not being an official text).
         <p>Highlights include a very readable motivation for completeness of the reals and 𝜀-𝛿 proofs; most exercises are also very interesting. I would avoid the
@@ -159,7 +161,7 @@ to include library call numbers any more.</i>
         by the same author. However, I find this concise introduction a little too concise (and that it introduces technicalities in all the
         wrong places). Munkres' <em>Analysis on Manifolds</em> is an expanded and updated book which is (anecdotally) based on Spivak; but I have
         never liked it that much either.</li>
-    <li>Lynn Loomis and Shlomo Sternberg, <em>Advanced Calculus</em>. This book started off as notes for the legendary Math 55 at Harvard (a first year course!);
+    <li class="fav">Lynn Loomis and Shlomo Sternberg, <em>Advanced Calculus</em>. This book started off as notes for the legendary Math 55 at Harvard (a first year course!);
         it starts off with a recap of linear algebra (really one of the best `second courses in linear algebra' I've looked at), and ends up around 500
         pages later with a very nice approach to differential forms. This is my favourite calculus text of all time, but it is probably a little too much
         for students in first year! The preface recommends Spivak's <em>Calculus</em> as prep, but I think it likely that a little more maturity is required that
@@ -179,7 +181,7 @@ to include library call numbers any more.</i>
     <li>Gilbert Strang: <em>Linear Algebra and its Applications</em>. An incredibly computational book: I use this if I need
         an algorithm/computation notes. It's probably very good for compsci students, there's a lot of optimisation and efficiency
         stuff in here (my edition gives all the computer code in FORTRAN and some flavour of BASIC, but it's an old edition). Probably not recommended for mathematics students though.</li>
-    <li>Paul Halmos, <em>Finite-Dimensional Vector Spaces</em>. My favourite linear algebra book! Like every other Paul Halmos book, it is incredibly well-written; just take care not
+    <li class="fav">Paul Halmos, <em>Finite-Dimensional Vector Spaces</em>. My favourite linear algebra book! Like every other Paul Halmos book, it is incredibly well-written; just take care not
         to get bogged down by the sections on multi-linear algebra and determinants. The exercises are actually quite similar to those that you should be solving for anyway, just take note of his
         preface (some exercises are introduced before the material that makes them easy). Like <em>Naive Set Theory</em> below, the theorems themselves are
         the real exercises.</li>
@@ -191,7 +193,7 @@ to include library call numbers any more.</i>
         if I had to pick a book to do it it would be this one. It's very slow, very friendly, and incredibly fluffy. I photocopy some parts for high school students
         occasionally.</li>
     <li>Daniel Velleman, <em>How to Prove It</em>. Again, I don't like this kind of book in general; this book in particular I can't stand. Many people like it.</li>
-    <li>Paul Halmos, <em>Naive Set Theory</em>. This is <em>the</em> set theory book that you should read. Not many exercises that are marked as such, but the proofs are
+    <li class="fav">Paul Halmos, <em>Naive Set Theory</em>. This is <em>the</em> set theory book that you should read. Not many exercises that are marked as such, but the proofs are
         often vague enough that you should be filling bits in on your own anyway. There is an exercises book lying around in the library somewhere if you really
         feel like you need it.</li>
     <li>L.E. Sigler, <em>Exercises in Set Theory</em>. In fact, this is that book of exercises. Might be worth a look but as I remember it's a bit dry and not actually
@@ -235,9 +237,9 @@ to include library call numbers any more.</i>
 
 <div>
   <h2><a id="upper-level-undergraduate-texts-stage-iii">Higher undergraduate books</h2>
-  <h3><a id="mathematical-logic-315">Mathematical logic (315)</h3>
+  <h3><a id="mathematical-logic-315">Mathematical logic</h3>
   <ul>
-    <li>A. G. Hamilton, <em>Logic for Mathematicians</em>. This is the text for 315, it failed to keep my attention but I think that's a feature of most
+    <li>A. G. Hamilton, <em>Logic for Mathematicians</em>. This is the text for the logic paper I took in undergraduate, it failed to keep my attention but I think that's a feature of most
     logic books.</li>
     <li>H.-D. Ebbinghaus, J. Flum, and W. Thomas, <em>Mathematical Logic</em>. I slightly prefer this to Hamilton. Perhaps if I leave it under my pillow I will learn to like logic via osmosis.</li>
   </ul>
@@ -255,7 +257,7 @@ to include library call numbers any more.</i>
       expensive.) The library has copies if you feel you need it.</li>
   <li>Charles Pinter, <em>A Book of Abstract Algebra</em>. Introductory book. Lots of interesting exercises covering both applications
       and pure mathematics: the proof of the structure theorem for abelian groups is left as a structured set of exercises, for example. Also very cheap.</li>
-  <li>Michael Artin, <em>Algebra</em>. This is the best introductory algebra book I know of. Lots of geometry (e.g. he classifies all of the motions of the plane).
+  <li class="fav">Michael Artin, <em>Algebra</em>. This is the best introductory algebra book I know of. Lots of geometry (e.g. he classifies all of the motions of the plane).
       Focuses heavily on linear algebra. Maybe a little light on the proofs (not that he's not rigorous, but make sure you do the exercises, or you'll miss out
       on stuff). Highlights include a chapter on Galois theory (first edition only) and a chapter on group representations.</li>
   <li>Ian Stewart, <em>Galois Theory</em>. Once you have an OK grounding in basic facts about groups, rings, and fields then this book is a readable
@@ -268,7 +270,7 @@ to include library call numbers any more.</i>
 
   <h3><a id="combinatorics-and-finite-geometry-326">Combinatorics and finite geometry</h3>
   <ul>
-    <li>Miklos Bona, <em>A Walk Through Combinatorics</em>. This is a very good introduction to combinatorics. Cute book, but a little pricey. Version in the library is an
+    <li class="fav">Miklos Bona, <em>A Walk Through Combinatorics</em>. This is a very good introduction to combinatorics. Cute book, but a little pricey. Version in the library is an
         older edition without design theory. Perhaps a bit chatty and slow to get started, but does cover a lot of random topics that should be of interest both for computer
         science and mathematics.</li>
     <li>Bela Bollobas, <em>Modern Graph Theory</em>; Reinhard Diestel, <em>Graph Theory</em>. Very nice graph theory books. I prefer Bollobas, but Diestel is more modern. Overall
@@ -301,7 +303,7 @@ to include library call numbers any more.</i>
         handwavy way; there is also almost an outline of a construction via Cauchy sequences in exercise 2.8.L; I know that Tao does this same construction
         in the same kind of detail as the rest of D&amp;D, so it might be an idea to look there for this material. Or in Rudin, or Landau.)
         <p>Like Jones &amp; Jones in the number theory section, this is another new Springer book with really annoying typesetting, but to a lesser degree. (*)</li>
-        <li>Walter Rudin, <em>Principles of Mathematical Analysis</em>. The first eight chapters are an incredibly clean and terse exposition of metric space theory.
+    <li class="fav">Walter Rudin, <em>Principles of Mathematical Analysis</em>. The first eight chapters are an incredibly clean and terse exposition of metric space theory.
         People I know have called it dry, but I didn't actually find it that bad - it is a little lacking in motivation, so maybe it would be a good idea
         to pick up a shiny book like Davidson &amp; Donsig above as well for historical details and more examples. (I personally used a mixture of the two when
         I learned real analysis.)
@@ -322,14 +324,15 @@ to include library call numbers any more.</i>
     <li>Jeffrey R. Weeks, <em>The Shape of Space</em>. This is supposed to "fill the gap" between the simple geometric examples of topology (Klein bottles, tori) and
         the "sophisticated mathematics of upper-level courses". I don't think it does this job very well, but it is a very nice book of geometry that might even
         be accessible to the layperson. What I would like to see is a book like this that makes explicit the actual links with point-set topology.</li>
-    <li>James R. Munkres, <em>Topology</em>. This is the standard topology book, it's very clear with lots of examples and pictures. I didn't like the section on
+    <li class="fav">James R. Munkres, <em>Topology</em>. This is the standard topology book, it's very clear with lots of examples and pictures. I didn't like the section on
           metric spaces, though - use Rudin here, it's a good supplement. Kolmogorov &amp; Fomin is also nice to read alongside.
           <p>Having thought about it for a while, I think it's incredibly likely that this is the textbook I have spent the most time with over the past year:-
-          it was used in the topology course I took in 2018, and I must have spent at least an hour a day with it, doing readings or problems.
-          <p>(<a href="http://drorbn.net/index.php?title=10-327/Errata_to_Munkres%27_Book">Errata</a>) (514.3 M96)</li>
+          it was used in the topology course I took in 2018, and I must have spent at least an hour a day with it, doing readings or problems. Unfortunately the algebraic topology
+          part is not so good, it is very short and does not do the subject justice (it is overly technical, I think).
+          <p>(<a href="http://drorbn.net/index.php?title=10-327/Errata_to_Munkres%27_Book">Errata</a>)</li>
   </ul>
 
-  <h3><a id="complex-calculus-and-analysis-340-341">Complex calculus and analysis (340, 341)</h3>
+  <h3><a id="complex-calculus-and-analysis-340-341">Complex calculus and analysis</h3>
   <p>The first few books here, broadly speaking, are complex calculus books; the latter books are complex analysis books.
   <ul>
     <li>Stephen D. Fisher, <em>Complex Variables</em>. The main problem with this book is that it's trying to be both a rigorous book and a
@@ -341,7 +344,7 @@ to include library call numbers any more.</i>
     <li>E.B. Saff and A.D. Snider, <em>Fundamentals of Complex Analysis for Mathematics, Sci...etc.</em> Basically a calculus book, so if you like Stewart
         or Anton you'll probably like this. I don't hate it, and I found it useful for complex calculus, if a little dry. The problems are much better
         than Fisher (in that they fit the style of the book). More examples than Fisher. It's a bit expensive, because it's a calculus book...</li>
-    <li>Tristan Needham, <em>Visual Complex Analysis</em>. This book attempts to construct complex analysis purely geometrically. It is quite successful
+    <li class="fav">Tristan Needham, <em>Visual Complex Analysis</em>. This book attempts to construct complex analysis purely geometrically. It is quite successful
         in building intuition, but there are no proofs at all and a number of theorems are only (strongly) hinted at rather than stated - even important ones
         like Cauchy's theorem. It has the great advantage of doing an awful lot of geometry.</li>
     <li>Elias Wegert, <em>Visual Complex Functions</em>. Another visual book, of a different style to Needham. This book develops the theory with proper
@@ -368,13 +371,13 @@ to include library call numbers any more.</i>
         geometry? Buy this (cheap) book and do all the problems. All are very good. Difficulty from school level upwards.</li>
     <li>Marta Sved, <em>Journey into Geometries</em>. This is a very strange book which motivates non-Euclidean geometry (hyperbolic geometry in particular) with
         the characters of Alice in Wonderland. It's well worth the read.</li>
-    <li>Harold Coxeter, <em>Introduction to Geometry</em> and <em>Geometry Revisited</em>. These books are both full of a lot of nice university geometry with some quite
+    <li class="fav">Harold Coxeter, <em>Introduction to Geometry</em> and <em>Geometry Revisited</em>. These books are both full of a lot of nice university geometry with some quite
         nice links to other subjects: for example, crystallography and biology. <em>Revisited</em> doesn't require any more than basic school geometry, but <em>Introduction</em>
         is quite sophisticated and difficult to read cover-to-cover as he uses a wide variety of techniques from different fields (group theory, linear algebra,
         calculus) without any warning. It is very easy to expand a lot of what Coxeter says in half a page into hours of
         fruitful <del>messing about with a blackboard</del> thinking. (I have used part of <em>Intro.</em> as a basis for a set of NCEA level 3 geometry notes,
         and managed to expand three pages of Coxeter into around thirty pages of notes.)</li>
-    <li>Marcel Berger, <em>Geometry</em>. But this is my favourite geometry book.  It is a little long (two volumes), but you can dip in and out of it rather than
+    <li class="fav">Marcel Berger, <em>Geometry</em>. But this is my favourite geometry book.  It is a little long (two volumes), but you can dip in and out of it rather than
         reading linearly. There are many nice pictures, including of physical models; in addition, almost every geometric theorem I've ever seen in any paper
         is included here (although often under a different name). There are a lot of very pretty results in both affine and projective geometry. Linear algebra
         and group theory are used extensively (of course).</li>
@@ -387,7 +390,7 @@ to include library call numbers any more.</i>
     <li>Audun Holme, <em>A Royal Road to Algebraic Geometry</em>. This is a very gentle introduction to the subject that is very well-motivated if you have some
         experience with projective geometry and classical algebraic geometry (c.f. Kendig's <em>Conics</em> below). Unfortunately the second half seems to be completely
         unedited and is full of typos and mistakes which make it almost unreadable if you are trying to learn the subject.</li>
-    <li>Joe Harris, <em>Algebraic Geometry: A first course</em>. This is my favourite introductory book. I think there is a good range of
+    <li class="fav">Joe Harris, <em>Algebraic Geometry: A first course</em>. This is my favourite introductory book. I think there is a good range of
         content and it has the advantage too of doing a lot of geometry (compared to Reid or the book by Cox/Little/O'Shea). It includes a
         very readable proof of Bezout's theorem (chapter 18), a vast number of interesting examples of varieties contructed in ways other
         than just taking a random polynomial (he constructs Grassmannians, scrolls, flag manifolds, determinantal varieties, various
@@ -395,7 +398,7 @@ to include library call numbers any more.</i>
         hand it is a bit light on some proofs but I think that this is a tradeoff that has to be made in writing an introduction to this
         subject given how abstract it can be. Of course he also assumes everything is algebraically closed, I think the alternative requires
         a lot of attention to technical detail and is best left to scheme theory.</li>
-    <li>Kieth Kendig, <em>Conics</em>. This book is everything you always suspected about conic sections and it is amazing. Please read it.</li>
+    <li class="fav">Kieth Kendig, <em>Conics</em>. This book is everything you always suspected about conic sections and it is amazing. Please read it.</li>
     <li>George Salmon, <em>A Treatise on Conic Sections</em>. If you read Kendig and want to know more, this book (from the 1800s) is very good but a little difficult to read
         due to its age. Serving recommendation: read and try to make Salmon's statements precise with projective geometry and/or complex algebra.</li>
   </ul>
@@ -419,7 +422,7 @@ to include library call numbers any more.</i>
     <li>Serge Lang, <em>Algebra</em>. I like the ability to open up at a random page and begin to work without needing to read
         the previous hundred pages; I dislike the confusing text, lack of detail, incredibly imprecise cros-references ("this was proved in chapter 6" with no further details) and
         the inconsistent level of difficulty. Before Aluffi, though, this was really the only properly comprehensive algebra book.</li>
-    <li>Paulo Aluffi, <em>Algebra: Chapter 0</em>. This is the book which has replaced Lang as my reference book for basic facts in algebra. Instead of expecting the reader to learn category
+    <li class="fav">Paulo Aluffi, <em>Algebra: Chapter 0</em>. This is the book which has replaced Lang as my reference book for basic facts in algebra. Instead of expecting the reader to learn category
         theory by osmosis (like Lang does), Aluffi introduces it in a very practical way; the exercises are excellent, the book is very well-written. Highly highly recommended. Lots of connections
         given to various areas of mathematics (e.g. some basic algebraic geometry; some number theory; some topology).</li>
   </ul>
@@ -451,7 +454,7 @@ to include library call numbers any more.</i>
   <ul>
     <li>M. F. Atiyah and I. G. Macdonald, <em>Introduction to Commutative Algebra</em>. A little book with everything you will ever need to know about commutative algebra if you are applying it
         to other subjects, and enough to show the interest o the subject. The exercises are very good and contain many applications.</li>
-    <li>David Eisenbud, <em>Commutative Algebra with a View Toward Algebraic Geometry</em>. This is my favourite mathematics book of all time. Not an introductory text (see Atiyah-Macdonald for that),
+    <li class="fav">David Eisenbud, <em>Commutative Algebra with a View Toward Algebraic Geometry</em>. This is my favourite mathematics book of all time. Not an introductory text (see Atiyah-Macdonald for that),
         but a book about applying commutative algebra to geometry and number theory.</li>
     <li>Ezra Miller and Bernd Sturmfels, <em>Combinatorial Commutative Algebra</em>; Richard P. Stanley, <em>Combinatorics and Commutative Algebra</em>. Applications of combinatorics to commutative algebra,
         and vice versa. Primarily the combinatorics involved is that of polytopes and more general complexes.
@@ -494,13 +497,13 @@ to include library call numbers any more.</i>
     <li>Martin Aigner, <em>Combinatorial Theory</em>; Jack Graver and Mark Watkins, <em>Combinatorics with emphasis on the theory of graphs</em>. These books are more algebraic in
         style than combinatoric, developing a more abstract theory and then applying it to combinatorial problems. Aigner studies mainly enumerative and order-theoretic combinatorics,
         and Graver/Watkinds studies mainly design-theoretic combinatorics, so together they kind of cover the whole field.
-    <li>Richard P. Stanley, <em>Enumerative Combinatorics</em> (2 volumes). A very good reference on counting problems and the related techniques. The exercises are excellent
+    <li class="fav">Richard P. Stanley, <em>Enumerative Combinatorics</em> (2 volumes). A very good reference on counting problems and the related techniques. The exercises are excellent
         introductions to the applications (to representation theory, number theory, geometry, chess,...), worth reading in and of themselves.
   </ul>
   <p><strong><a id="pg-combinatorics-polytopes">Polytopes.</strong> See also the books by Stanley and Miller-Sturmfels in Commutative Algebra above.
   <ul>
     <li>H.S.M. Coxeter, <em>Regular Polytopes</em>. Another book by Coxeter that you need to read right now. Very classical introduction to polytopes, various constructions, and their symmetries.
-    <li>Günter M. Ziegler, <em>Lectures on Polytopes</em>. A much more modern book on the algebraic theory of polytopes. Lots of nice applications of the theory, and very interesting historical
+    <li class="fav">Günter M. Ziegler, <em>Lectures on Polytopes</em>. A much more modern book on the algebraic theory of polytopes. Lots of nice applications of the theory, and very interesting historical
         notes. This is the book you want to go along with the books on toric geometry below. (While I am thinking about it, you should also look at the book by Ewald below in the section on toric
         geometry for another introduction to convex polytopes that I like.) Highly recommended.
     <li>Branko Grünbaum, <em>Convex Polytopes</em>. This is an incredibly comprehensive tome. The latest addition is annotated by  Volker Kaibel, Victor Klee, and Günter M. Ziegler,
@@ -513,7 +516,7 @@ to include library call numbers any more.</i>
   <ul>
     <li>Alan Hatcher, <em>Algebraic Topology</em>. <a href="http://pi.math.cornell.edu/~hatcher/AT/ATpage.html">Free online.</a> Many people like this book, but it is not to my taste (I
         think it is overly verbose). It is incredibly long but doesn't cover much (any?) more material than other books: the extra space is given over to many pictures and a lot of exposition.
-    <li>Glen E. Bredon, <em>Topology and Geometry</em>. This is my favourite algebraic topology book, but I don't like the notation that much. More geometric than purely topological; I really like
+    <li class="fav">Glen E. Bredon, <em>Topology and Geometry</em>. This is my favourite algebraic topology book, but I don't like the notation that much. More geometric than purely topological; I really like
         the choices of topics. I think that Munkres' <em>Topology</em> plus some (rigorous) multivariable calculus (probably Spivak or Munkres) is the best preparation for this book.
     <li>John Lee, <em>Introduction to Topological Manifolds</em>. If you like Lee's writing style, this is probably the book for you. It is a little too differential-geometric rather than purely
         geometric for my liking, but the material on covering spaces is very clear.
@@ -554,7 +557,7 @@ to include library call numbers any more.</i>
         and their fractal limit sets. Possibly even accessible to undergraduates.
     <li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em>. An elementary introduction to Fuchsian groups (discrete subgroups of \(\mathrm{PSL}(2,\mathbb{R}) \)) and their
         related complex and hyperbolic structures. Minimal topology needed. It doesn't really do enough interesting geometry for me, but it is a good start.
-    <li>Bernard Maskit, <em>Kleinian Groups</em>. Now this is more like it. Much faster introduction and now more generally about Kleinian groups (discrete subgroups of \(\mathrm{PSL}(2,\mathbb{C}) \)),
+    <li class="fav">Bernard Maskit, <em>Kleinian Groups</em>. Now this is more like it. Much faster introduction and now more generally about Kleinian groups (discrete subgroups of \(\mathrm{PSL}(2,\mathbb{C}) \)),
         with lots of geometry to think about. Some sections can be a bit dry if you are not that interested in combinatorial group theory (especially the final chapters) but once you get the hang of the basics
         you can get away with skipping around a bit to see the highlights. Historically pre-Thurston so the geometry is quite classical.
     <li>Katsuhiko Matsuzaki and Masahiko Taniguchi, <em>Hyperbolic manifolds and Kleinian groups</em>. Even more geometric than Maskit, and now post-Thurston (so for instance there is some material on Dehn surgery).
@@ -605,7 +608,7 @@ to include library call numbers any more.</i>
         motivation yourself --- again, it was the first real book on the subject and the primary audience was people already in classical algebraic geometry who wanted to learn this new stuff that Grothendieck
         had just come up with. The book is highly deficient in arithmetic examples, see Eisenbud and Harris (for instance) for some number theoretic applications.
     <li>Igor Shafarevich, <em>Basic Algebraic Geometry</em> (vol. 2). Primarily about schemes over \(\mathbb{C}\), I really like volume 1 but this is not so much my thing.
-    <li>David Eisenbud and Joe Harris, <em>The Geometry of Schemes</em>. Very good set of examples, just ignore chapter I (it is there basically to fix notation and I think it is wrong
+    <li class="fav">David Eisenbud and Joe Harris, <em>The Geometry of Schemes</em>. Very good set of examples, just ignore chapter I (it is there basically to fix notation and I think it is wrong
         to try to read it to learn the definitions and motivation) and go straight to chapter II and maybe IV. But I think it is wrong to try to talk about schemes before learning the
         motivating constructions from classical geometry, they are not very interesting or useful without doing a lot of stuff first since the advantages are very high-level and the
         barriers are very concrete (i.e. abstraction in three different directions at once) - E-H has the advantage of actually motivating scheme-theoretic constructions like blowups
@@ -630,7 +633,7 @@ to include library call numbers any more.</i>
         inside the polytope define the ring of functions on a variety that reflects the combinatorial properties of the polytope. In fact it turns out that many many varieties arise in this way and so the
         theory is very applicable. It is also nice in the sense that toric varieties have very regular behaviour compared to arbitrary varieties.) I would recommend this book to people interested only in
         the combinatorics of polytopes as well, since that half of the book is very easy to read and has a different perspective to something like Ziegler (see above).
-    <li>William Fulton. <em>Introduction to Toric Varieties</em>. The classical introduction to toric varieties, much faster than Cox/Little/Schenck and also much shorter (~100 pages vs ~800 pages).
+    <li class="fav">William Fulton. <em>Introduction to Toric Varieties</em>. The classical introduction to toric varieties, much faster than Cox/Little/Schenck and also much shorter (~100 pages vs ~800 pages).
         Some nice pictures, too, but leaves even more of the background material assumed.
     <li>Tadao Oda. <em>Lectures on Torus Embeddings and Applications</em> and <em>Convex Bodies and Algebraic Geometry : an introduction to the theory of toric varieties</em>. Oda was one of the original practitioners
         of the subject, so these are mainly of historical interest.
