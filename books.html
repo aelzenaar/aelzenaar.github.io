@@ -70,6 +70,7 @@ books with a green star, <span class="fav">thus</span>.
 <li><a href="#pg-algebra-gen">General algebra</a></li>
 <li><a href="#pg-algebra-grp">Group theory</a></li>
 <li><a href="#pg-algebra-cat">Category theory</a></li>
+<li><a href="#pg-algebra-lin">Linear algebra</a></li>
 <li><a href="#pg-algebra-com">Commutative algebra</a></li>
 <li><a href="#pg-algebra-rep">Rings and group representations</a></li>
 </ul></li>
@@ -325,7 +326,10 @@ books with a green star, <span class="fav">thus</span>.
         wanted to learn more about topology.</li>
     <li>Jeffrey R. Weeks, <em>The Shape of Space</em>. This is supposed to "fill the gap" between the simple geometric examples of topology (Klein bottles, tori) and
         the "sophisticated mathematics of upper-level courses". I don't think it does this job very well, but it is a very nice book of geometry that might even
-        be accessible to the layperson. What I would like to see is a book like this that makes explicit the actual links with point-set topology.</li>
+        be accessible to the layperson. What I would like to see is a book like this that makes explicit the actual links with point-set topology.
+        <p><em>I wrote the previous review in 2018, here is an update for 2021:</em> Of coure what Weeks meant (and I didn't understand at the time) was to link <em>algebraic topology</em>
+        and not <em>point-set topology</em> to the explicit geometry of Thurston etc. I can even name a book which does this with more sophistication (Weeks is really a book
+        for an interested first year student): Bredon's <em>Geometry and Topology</em> which I talk about below.
     <li class="fav">James R. Munkres, <em>Topology</em>. This is the standard topology book, it's very clear with lots of examples and pictures. I didn't like the section on
           metric spaces, though - use Rudin here, it's a good supplement. Kolmogorov &amp; Fomin is also nice to read alongside.
           <p>Having thought about it for a while, I think it's incredibly likely that this is the textbook I have spent the most time with over the past year:-
@@ -350,9 +354,9 @@ books with a green star, <span class="fav">thus</span>.
         in building intuition, but there are no proofs at all and a number of theorems are only (strongly) hinted at rather than stated - even important ones
         like Cauchy's theorem. It has the great advantage of doing an awful lot of geometry.</li>
     <li>Elias Wegert, <em>Visual Complex Functions</em>. Another visual book, of a different style to Needham. This book develops the theory with proper
-        proofs, and has a much more analytic flavour. The tool of choice here is the `graph' (in some sense) of the complex function; this is in
+        proofs, and has a much more analytic flavour. The tool of choice here is the 'graph' (in some sense) of the complex function; this is in
         contrast to Needham's approach via differentiation.</li>
-    <li>Joseph L. Taylor, <em>Complex Variables</em>. This is a new and shiny (2011) book that is rouhly at the level of a first course. It's OK.</li>
+    <li>Joseph L. Taylor, <em>Complex Variables</em>. This is a new and shiny (2011) book that is roughly at the level of a first course. It's OK.</li>
     <li>John Conway, <em>Functions of One Complex Variable I</em>. I found this book to be readable, but very slow.</li>
     <li>Lars Ahlfors, <em>Complex Analysis</em>. This is a little old-fashioned, but very geometric. My main issue is that everything is done by partial
         differentiation and differential forms; there is also not a lot of emphasis on series representations (analyticity) in the first
@@ -405,7 +409,13 @@ books with a green star, <span class="fav">thus</span>.
         hand it is a bit light on some proofs but I think that this is a tradeoff that has to be made in writing an introduction to this
         subject given how abstract it can be. Of course he also assumes everything is algebraically closed, I think the alternative requires
         a lot of attention to technical detail and is best left to scheme theory.</li>
-    <li class="fav">Kieth Kendig, <em>Conics</em>. This book is everything you always suspected about conic sections and it is amazing. Please read it.</li>
+    <li>Igor Shafarevich, <em>Basic Algebraic Geometry I</em>. A Russian algebraic geometry book, also one of my favourites. It is more comprehensive than Harris (e.g. there is a proof of
+        the Riemann-Roch theorem for curves, a more careful study of intersection numbers, and lots of stuff on differential forms) and I tend to oscillate between which one I prefer.
+        On the other hand, it has the feeling of a book on algebraic geometry written by an analyst (I am not sure why, since Shafarevich was an arithmetic geometer!) and is very very classical,
+        unlike Harris which develops more rigid intuition (I know this is very vague and I apologise) and the result is that I think Harris is a better book for budding pure algebraic geometers
+        while Shafarevich is better for those who want to apply algebraic geometry to other parts of mathematics (beyond number theory, of course, which is more rigid). This kind of explains why
+        I don't like volume 2 (on schemes) so much --- I write about this below in the section on scheme theory.
+    <li class="fav">Keith Kendig, <em>Conics</em>. This book is everything you always suspected about conic sections and it is amazing. Please read it.</li>
     <li>George Salmon, <em>A Treatise on Conic Sections</em>. If you read Kendig and want to know more, this book (from the 1800s) is very good but a little difficult to read
         due to its age. Serving recommendation: read and try to make Salmon's statements precise with projective geometry and/or complex algebra.</li>
   </ul>
@@ -457,7 +467,31 @@ books with a green star, <span class="fav">thus</span>.
         examples from (algebraic topology mainly), and it is a little dry. I would recommend Aluffi as an introductory text nowadays if you don't have this background.</li>
     <li>Saunders Mac Lane and Ieke Moerdijk, <em>Sheaves in Geometry and Logic</em>. Applications of pure category theory to logic, algebraic topology, and algebraic geometry. Very
         readable book, surprisingly so given how abstract this stuff can get.
+    <li>Denis-Charles Cisinski, <em>Higher Categories and Homotopical Algebra</em>. When you finish Mac Lane/Moerdijk, you can read this: an introduction to \(\infty\)-categories. I must confess
+        that this is the point at which I feel the abstraction beginning to overcome me, not unlike the cold that overcame Socrates at his execution [Plato, <em>Phaedo</em>].
+    <li>Jacob Lurie, <em>Higher Topos Theory</em> (and other such books). But wait, there's more. Just as the Chicago bibliography draws the arbitrary line for "difficulty" at
+        Hartshorne ("difficulty level unbounded above..."), I draw the line here. I have come past the point where Hartshorne looks legendarily difficult, and now it is this set of
+        books by Lurie which are the ones that, to me, feel legendarily abstract.
   </ul>
+
+  <p><strong><a id="pg-algebra-la">Linear algebra.</strong>
+  <ul>
+    <li>W. H. Greub, <em>Linear Algebra</em> and <em>Multilinear Algebra</em>. Part of me is unsure whether you can really put a section on linear algebra in a list of
+        postgraduate books (and surely such a section would be called "commutative algebra"!), but this book talks about universal properties and such things so I would
+        say it is more at the level of Aluffi's treatment of linear algebra than Poole's (even if the content is similar in the linear algebra part, culminating in such
+        exotic things as unitary maps and quadrics). Actually, looking again now it has some graded spaces and homology so I should stop complaining!
+
+        <p>I want to mention this here because I remember being in the <a href="gerstein.jpg">Gerstein library</a> looking at books and I picked this one up and was so utterly confused by the definition
+        of the tensor product via the universal property. (For the longest time I thought that the book I remembered was a book by Lang on linear algebra, but I just looked
+        at a PDF of the third edition of his UTM and he seems not to mention tensor products in there. Greub is my second guess as to what book it is, but perhaps it was an
+        older edition of Lang. Or some other book - I definitely remember it was a Springer book, though.)
+        <p>
+        In any case this is a nice reference. How does the Chicago bibliography put it... "One day, you may just have to know fifteen different ways to decompose a linear map into parts
+        with different nice properties. On that day, your choices are Greub and Bourbaki. Greub is easier to carry." I don't think I can improve on that. On the other hand, nowadays I would
+        pick up Aluffi first before I tried Greub - Aluffi is just an all-round good reference for this kind of thing.
+    <li>While I am here I might as well mention Steven Roman, <em>Advanced Linear Algebra</em>. Primarily because it has a chapter on the umbral calculus. (Otherwise it is not as comprehesive as Greub.)
+  </ul>
+
   <p><strong><a id="pg-algebra-com">Commutative algebra.</strong>
   <ul>
     <li>M. F. Atiyah and I. G. Macdonald, <em>Introduction to Commutative Algebra</em>. A little book with everything you will ever need to know about commutative algebra if you are applying it
@@ -512,7 +546,10 @@ books with a green star, <span class="fav">thus</span>.
         style than combinatoric, developing a more abstract theory and then applying it to combinatorial problems. Aigner studies mainly enumerative and order-theoretic combinatorics,
         and Graver/Watkinds studies mainly design-theoretic combinatorics, so together they kind of cover the whole field.
     <li class="fav">Richard P. Stanley, <em>Enumerative Combinatorics</em> (2 volumes). A very good reference on counting problems and the related techniques. The exercises are excellent
-        introductions to the applications (to representation theory, number theory, geometry, chess,...), worth reading in and of themselves.
+        introductions to the applications (to representation theory, number theory, geometry, chess,...), worth reading in and of themselves. I must also mention the following rather odd fact
+        which was noted on the Facebook page <a href="https://www.facebook.com/gradtexmeme/">Graduate Texts in Memes</a>: there is a Facebook profile under the name Richard Stanley which seems
+        to spend most of the time posting pictures of small children reading this book. (I will not link it here because I feel uncomfortable linking what could be someone's
+        private account.)
   </ul>
   <p><strong><a id="pg-combinatorics-polytopes">Polytopes.</strong> See also the books by Stanley and Miller-Sturmfels in Commutative Algebra above.
   <ul>
@@ -541,6 +578,10 @@ books with a green star, <span class="fav">thus</span>.
         for Hartshorne's chapter III, I think).
     <li>Robert Ghrist, <em>Elementary Applied Topology</em>. A basic introduction to algebraic topology with applications to graph theory, computation theory, statistics, splines, and other fields. Put this
         in the category with Neeham's <em>Visual Complex Analysis</em>, I think.
+    <li>George W. Whitehead, <em>Elements of homotopy theory</em>; Jeffrey Strom, <em>Modern classical homotopy theory</em>. I now mention two harder books, both on homotopy theory. This is another subject
+        which I wish I knew more about; the book by Whitehead is a massive doorstop of a GTM (a quote from the preface promises "a leisurely exposition in which brevity and perhaps elegance are sacrificed"),
+        and the book by Strom is a massive GSM which is more modern but on the other hand seems to leave every second proof as an exercise to the reader (and the preface, I seem to recall, claims that this
+        was done by design). Anyway, homotopy theory is a very interesting subject and I prefer Whitehead despite the age - but of course I am not a specialist.
   </ul>
 
   <h2><a id="pg-diff">Differential geometry</h2>
