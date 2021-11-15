@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
   <style>
     body { padding-left: 3em; font-family: 'Zen Kaku Gothic New', sans-serif ; margin-right: 10% }
-    div {margin-left:-2em; padding-left:2em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid black; border-radius: 5px;}
+    div {margin-left:-2em; padding-left:2em; padding-right:0.5em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid black; border-radius: 5px;}
     .fav:before {content:"✵";color:green;font-size:200%}
   </style>
 </head>
@@ -108,21 +108,52 @@ books with a green star, <span class="fav">thus</span>.
 <div>
   <h2><a id="culture">Culture</h2>
   <ul>
-    <li>Paul Halmos, <em>I Want to be a Mathematician</em>. This is the autobiography of one of the most important mathematical writers of the 20th century, it is not only interesting as
-        a biography but also as a source of advice on writing mathematics, teaching, and other things. Highly recommended.</li>
-    <li>Michael Harris, <em>Mathematics Without Apologies: Portrait of a Problematic Vocation</em>. A more modern non-autobiography, I quite enjoyed it.</li>
+    <li class="fav">Paul Halmos, <em>I Want to be a Mathematician</em>. This is the autobiography of one of the most important mathematical writers of the 20th century, it is not only interesting as
+        a biography but also as a source of advice on writing mathematics, teaching, and other things. Particularly interesting are his discussions of graduate student life in the US before
+        the second world war, and the stories behind the two books I mention below, <em>Naive Set Theory</em> and <em>Finite-Dimensional Vector Spaces</em>. His discussion of the writing
+        process is particularly enlightening: it reminds me somewhat of another great writer, Vladimir Nabokov - for instance, both wrote on index cards (this is discussed on p.394 of Halmos
+        (Springer softcover reprint 1985) and on p.169 of Brian Boyd's <em>Vladimir Nabokov: The American Years</em> (Vintage softcover 1993)).
+        </li>
+    <li>Michael Harris, <em>Mathematics Without Apologies: Portrait of a Problematic Vocation</em>. A more modern non-autobiography, I quite enjoyed it. This book is allegedly addressed to the
+        layperson, which is an opportunity to impose upon you one of my opinions: there are two kinds of mathematical biographies, namely those by laypeople writing about mathematicians
+        and those by mathematicians writing about mathematicians. The first kind is invariably readable only by laypeople, and the second kind invariably only by mathematicians (regardless
+        of the target audience).
+        <p>
+        Let me be more precise: when a layperson (an abuse of terminology which I will use to mean 'non-mathematician' for convenience) writes a mathematical biography (two good examples
+        here: Paul Hoffman's <em>The Man Who Loved Only Numbers</em> (about Paul Erdos) and Simon
+        Singh's <em>Fermat's Last Theorem</em> which I would place in the 'biography' super-genre despite being a biography of something inanimate) a full two-thirds of the book is spent
+        on discussing mathematical culture through listing off the same few historical events (e.g. stating the <em>Bridges of Konigberg</em> problem, or giving a precis of a biography of Ramanujan).
+        On the other hand, mathematicians do not do this - and even when they try, as in Harris' book here, the level of discourse is far beyond the average reader with only minimal mathematical training:
+        not so much the mathematical content (here, the basics of number theory) but the speed at which it is expounded which requires a certain amount of mathematical maturity. That is, there is a reason
+        that the non-mathematician spends 2/3 of the book on this stuff when writing for the layperson, rather than the three sections of this 10-chapter book.
+        <p>
+        This was recently discussed in <a href="https://xkcd.com/2501/">XKCD:2501</a>. Another famous example is the rejected obituary of Grothendieck written by Tate and Mumford:
+        for their side of the story see Mumford's blog post <em><a href="https://www.dam.brown.edu/people/mumford/blog/2014/Grothendieck.html">Can one explain schemes to biologists</a></em>.
+        I also like the subsequent post <em><a href="http://www.neverendingbooks.org/can-one-explain-schemes-to-hipsters">Can one explain schemes to hipsters?</a></em> on the neverendingbooks blog,
+        and the post <em><a href="https://liorpachter.wordpress.com/2014/12/30/the-two-cultures-of-mathematics-and-biology/">The two cultures of mathematics and biology</a></em> on Lior Pachter's blog.
+        </li>
     <li>Paul Lockhart, <a href="https://www.maa.org/external_archive/devlin/LockhartsLament.pdf"><em>A Mathematician's Lament</em></a>: A complaint about the U.S. education system
         that is somewhat relevant to NZ.</li>
     <li>Underwood Dudley, <em>A Budget of Trisections</em> and <em>Mathematical Cranks</em>. Both very funny, quite quick to read! In <em>Trisections</em>, Dudley goes through a selection
-        of attempts to <a href="https://en.wikipedia.org/wiki/Angle_trisection">trisect the angle</a> using only a straightedge and compass (proved impossible by Wantzel in 1837).
-        <em>Cranks</em> is a short collection of random stories. (516.204 D84 and 510 D84)</li>
+        of attempts to trisect the angle using only a straightedge and compass (proved impossible by Wantzel in 1837).
+        <em>Cranks</em> is a short collection of random stories about mathematical cranks. At this point I am reminded that there is (was?) a book in the General Library by a relativity denier
+        whose first ten or so pages were covered in pencil from some conscientous physics student's efforts at giving detailed refutations - after ten pages, of course, they had clearly had
+        enough. (516.204 D84 and 510 D84)</li>
     <li>Stephen Krantz, <em>Mathematical Apocrypha</em> and <em>More Mathematical Apocrypha</em>. Collections of short mathematical biographies and urban legends (possibly even less reliable than Bell).</li>
     <li>Carl E. Linderholm, <em>Mathematics Made Difficult</em>. This book needs no introduction and no recommendation, it is a classic.</li>
     <li>Norman E. Steenrod; Paul R. Halmos; Menahem M Schiffer; and Jean A. Dieudonné, <em>How to Write Mathematics</em>. This is a collection of four essays,
         the theme being mathematical writing (planning structure, style of writing, etc.). Well worth the read.</li>
     <li>G. H. Hardy, <em>A Mathematician's Apology</em>. This is a classic book, but should be read with the understanding that many of the philosophical ideas
-        put forward by Hardy are old-fashioned at best and damaging at worst.</li>
+        put forward by Hardy are old-fashioned at best and damaging at worst. A very good discussion of this from a modern viewpoint is chapter 10 of Harris <em>Mathematics Without Apologies</em> which I mentioned above.</li>
     <li>Diana Davis (ed.), <em>Illustrating Mathematics</em>. Very nice book of pictures of various geometric objects which have been made "in the real world" (e.g. sculptures or line drawings).
+    <li>Mark Ronan, <em>Symmetry and The Monster</em>. An introduction to the classification of the finite simple groups, very good bathroom reading. A bit of "mathematics for the nonmathematician" is included
+        but it doesn't make the book too hard to read (i.e. it is easy to skip).
+    <li>M.C. Escher, <em>The Magic of M.C. Escher</em>. Very nice edition of the works of Escher. In this vein see the book below by Grünbaum and Sheppard on tilings of the plane. Also highly
+        recommended is <a href="https://www.youtube.com/watch?v=JkhuMvFQWz4">this video of H.S.M. Coxeter discussing the work of Escher</a> (part of the documentary The Fantastic world of Escher)
+        and <a href="https://www.youtube.com/watch?v=kCc4fxeVaB8">this video on Coxeter, Gardner, and Escher</a>.
+    <li>Lewis Carroll, <em>Alice's Adventures in Wonderland</em> and <em>Through the Looking-Glass</em>. While on the subject of nice editions of mathematical art, I particularly recommend the edition
+        of Lewis Carroll's two novels published in the Penguin Classics series.
+    <li>Douglas Hofstadter, <em>Gödel, Escher, Bach</em>. Perhaps it is because I am not a philosopher or computer scientist, but I found it unreadable.
   </ul>
 </div>
 <div>
@@ -132,7 +163,7 @@ books with a green star, <span class="fav">thus</span>.
   <ul>
     <li>James Stewart, <em>Calculus</em> (and all other isomorphic books, e.g. Anton's calculus book). If you're an engineering student, this book is probably fine; it's full of
         routine problems. If you're a mathematics student, I wouldn't bother buying a copy (there are plenty in the library) - for the actual mathematics, see the lecture notes.</li>
-    <li>Silvanus Thompson, <em>Calculus Made Easy</em>. This is the book I originally learned calculus from (in year 11, or around 2013-4). It is a little old fashioned,
+    <li>Silvanus Thompson, <em>Calculus Made Easy</em>. This is the book I originally learned calculus from in year 11. It is a little old fashioned,
         but the intuition in here is very clear and the author has a sense of humour! This is perhaps the book I would recommend to the motivated Y12 student or the
         interested Y13 student if they want some reading material. It covers various integration tricks (or 'dodges', as Thompson calls them), as well as some geometry
         (lengths of curves, and curvature) and gives reasonable intuitive justifications for the rules.
@@ -194,7 +225,7 @@ books with a green star, <span class="fav">thus</span>.
         if I had to pick a book to do it it would be this one. It's very slow, very friendly, and incredibly fluffy. I photocopy some parts for high school students
         occasionally.</li>
     <li>Daniel Velleman, <em>How to Prove It</em>. Again, I don't like this kind of book in general; this book in particular I can't stand. Many people like it.</li>
-    <li class="fav">Paul Halmos, <em>Naive Set Theory</em>. This is <em>the</em> set theory book that you should read. Not many exercises that are marked as such, but the proofs are
+    <li class="fav">Paul Halmos, <em>Naive Set Theory</em>. This is <em>the</em> set theory book for the casual reader. Not many exercises that are marked as such, but the proofs are
         often vague enough that you should be filling bits in on your own anyway. There is an exercises book lying around in the library somewhere if you really
         feel like you need it.</li>
     <li>L.E. Sigler, <em>Exercises in Set Theory</em>. In fact, this is that book of exercises. Might be worth a look but as I remember it's a bit dry and not actually
@@ -211,9 +242,12 @@ books with a green star, <span class="fav">thus</span>.
         and the remainder are a mixture of topic chapters (on number representations, prime counting, and so on). As you might expect from this author, the book has
         a definite sense of humour. There is absolutely no algebra used at all, even if it would simplify any argument. This is good from the persepctive
         of 255.</li>
+    <li>Kenneth Rosen, <em>Elementary number theory and its applications</em>; Joseph Silverman, <em>A Friendly Introduction to Number Theory</em>. Alternative viewpoints.
+        Both have the advantage of being written by practicing number theorists; Silverman is supposed to be good for learning about some basic cryptography (i.e. in my
+        copy of Jones and Jones on p.93 is handwritten in capital letters "CONSULT SILVERMAN FOR CRYPTO" and I guess it is this book rather than <em>Diophantine Geometry</em>!).
   </ul>
 
-  <h3><a id="differential-equations-260">Differential Equations</h3>
+  <h3><a id="differential-equations-260">Differential equations</h3>
   <ul>
     <li>George F. Simmons, <em>Differential Equations with Applications and Historical Notes</em>. I have a feeling that most differential equations books tend to be
         a list of one unmotivated trick after another; this is another such book, but it is well-written, includes some fairly nice examples, and some pretty
@@ -280,14 +314,14 @@ books with a green star, <span class="fav">thus</span>.
     <li>Matthias Beck and Sinai Robins with David Austin, <em>Computing the Continuous Discretely</em>. A very readable introduction to polytope combinatorics for undergraduates. Repackages
         a lot of the stuff in Stanley's book on combinatorial commutative algebra and in Ziegler's book in a form digestable with minimal algebra. Very nice little UTM.
     <li>Branko Grünbaum and G. C. Sheppard, <em>Tilings &amp; Patterns</em>. Introduction to the combinatorics of symmetries with a very low bar to entry; lots of very nice pictures.
-        I would compare it with Coxeter's book on convex polytopes (see below), if you like one then you'll like the other. The open problems are a bit outdated.
+        I would compare it with Coxeter's book on convex polytopes (see below in the <a href="#pg-combinatorics-polytopes">section on polytopes</a>), if you like one then you'll like the other. The open problems are a bit outdated.
     <li>Branko Grünbaum, <em>Configurations of points and lines</em>. It seems to be a trend in geometry that good authors write many many books. This is another book on combinatorial
         geometry, this time about intersections of lines in the plane.
   </ul>
 
   <h3><a id="number-theory">Number theory</h3>
   <ul>
-    <li>Gareth A. Jones and J. Mary Jones, <em>Elementary Number Theory</em>. This is a step up from Dudley (see above). There are some very interesting
+    <li>Gareth A. Jones and J. Mary Jones, <em>Elementary Number Theory</em>. This is a step up from Dudley (see in the <a href="#elementary-number-theory-255">elementary number theory section</a> above). There are some very interesting
         problems in here, but the typesetting really annoys me. Don't let the easy nature of the first few chapters fool you. For chapter 5, our lecturer
         gave all the proofs via ring theory; if you know some algebra, write down these proofs yourself (they follow from the fact that a cyclic ring can be
         decomposed into a product of cyclic rings of prime power order; see, for example, Ireland &amp; Rosen) and compare with the ones in here. (512.7 J77)</li>
@@ -354,7 +388,11 @@ books with a green star, <span class="fav">thus</span>.
         than Fisher (in that they fit the style of the book). More examples than Fisher. It's a bit expensive, because it's a calculus book...</li>
     <li class="fav">Tristan Needham, <em>Visual Complex Analysis</em>. This book attempts to construct complex analysis purely geometrically. It is quite successful
         in building intuition, but there are no proofs at all and a number of theorems are only (strongly) hinted at rather than stated - even important ones
-        like Cauchy's theorem. It has the great advantage of doing an awful lot of geometry.</li>
+        like Cauchy's theorem. It has the great advantage of doing an awful lot of geometry.
+        <p>
+        In 2021 Needham published a second book like this, <em>Visual Differential Geometry and Forms: A Mathematical Drama in Five Acts</em> - I haven't had a chance to look
+        at it yet, but judging by VCA it should be well worth looking at.
+        </li>
     <li>Elias Wegert, <em>Visual Complex Functions</em>. Another visual book, of a different style to Needham. This book develops the theory with proper
         proofs, and has a much more analytic flavour. The tool of choice here is the 'graph' (in some sense) of the complex function; this is in
         contrast to Needham's approach via differentiation.</li>
@@ -398,7 +436,10 @@ books with a green star, <span class="fav">thus</span>.
         fruitful <del>messing about with a blackboard</del> thinking. (I have used part of <em>Intro.</em> as a basis for a set of NCEA level 3 geometry notes,
         and managed to expand three pages of Coxeter into around thirty pages of notes.) The discussion of differential geometry in <em>Intro.</em> is not so good, but that is
         just a small section - Coxeter was not a differential geometer, and he basically does differential geometry in the style of "calculus applied to geometry" (like do Carmo which I discuss below).
-        It is still my favourite broad introduction to geometry.</li>
+        It is still my favourite broad introduction to geometry.
+        <p>
+        See also the entry  on Escher under culture above.
+        </li>
     <li>Harold Coxeter, <em>Projective Geometry</em>. A quite axiomatic view of projective geometry; not my favourite book by Coxeter, but still a nice read. More comprehensive
         than the section of <em>Introduction</em> on projective geometry, but not as comprehensive as the chapters in Berger. Solid book.
     <li class="fav">Marcel Berger, <em>Geometry</em>. But this is my all-time favourite geometry book.  It is a little long (two volumes), but you can dip in and out of it rather than
@@ -513,7 +554,7 @@ books with a green star, <span class="fav">thus</span>.
   <ul>
     <li>M. F. Atiyah and I. G. Macdonald, <em>Introduction to Commutative Algebra</em>. A little book with everything you will ever need to know about commutative algebra if you are applying it
         to other subjects, and enough to show the interest of the subject. The exercises are very good and contain many applications, including a basic introduction to scheme theory (which was really
-        new at the time of writing).</li>
+        new at the time of writing). <a href="https://mathoverflow.net/q/42241/150082">Errata</a></li>
     <li class="fav">David Eisenbud, <em>Commutative Algebra with a View Toward Algebraic Geometry</em>. This is my favourite mathematics book of all time. Not an introductory text (see Atiyah-Macdonald for that),
         but a book about applying commutative algebra to geometry and number theory. Particular highlights include the chapters on filtrations, Hensel's lemma, flat families, and dimension theory. The exercises
         are also very interesting: they tend to be applications, generalisations, or intuition-building. For instance, the Cayley-Bacharach theorem appears as an exercise, as do many different forms of the
@@ -523,7 +564,7 @@ books with a green star, <span class="fav">thus</span>.
         counts the interior points of a lattice polytope), and McMullen's \(g\)-theorem (characterising the possible face numbers of simplicial polytopes). The whole theory is very pleasant, as you would expect
         from something that arises naturally in toric algebraic geometry.
     <li>M. Scott Osborne, <em>Basic Homological Algebra</em>. Very fast introduction to homological algebra and ext and tor (for an even faster one, see the appendix to Eisenbud). Very little motivation and no
-        applications, but if you need to learn homological algebra by tomorrow this is the book for you.
+        applications, but if you need to learn homological algebra by tomorrow this is the book for you. On the other hand this is yet another topic done incredibly well by Aluffi.
   </ul>
 
   <p><strong><a id="pg-algebra-rep">Rings and group representations.</strong>
@@ -591,17 +632,17 @@ books with a green star, <span class="fav">thus</span>.
     <li>John Stillwell, <em>Classical Topology and Combinatorial Group Theory</em>. Essentially an introduction to homotopy theory from a combinatorial point of view rather than a topological one.
         If you are more interested in heading towards knot theory and low-dimensional geometry and topology, this might be
         the book for you. Also talks about related computational results (e.g. the word problem in groups).
-    <li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em>. A very algebraic second course in algebraic topology, a lot of cohomology theory. (Best preparation
+    <li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em>. A very algebraic second course in algebraic topology, a lot of cohomology theory. Particularly algebraic in style. (Best preparation
         for Hartshorne's chapter III, I think).
     <li>Robert Ghrist, <em>Elementary Applied Topology</em>. A basic introduction to algebraic topology with applications to graph theory, computation theory, statistics, splines, and other fields. Put this
-        in the category with Neeham's <em>Visual Complex Analysis</em>, I think.
+        in the category with Needham's <em>Visual Complex Analysis</em>.
     <li>George W. Whitehead, <em>Elements of homotopy theory</em>; Jeffrey Strom, <em>Modern classical homotopy theory</em>. I now mention two harder books, both on homotopy theory. This is another subject
         which I wish I knew more about; the book by Whitehead is a massive doorstop of a GTM (a quote from the preface promises "a leisurely exposition in which brevity and perhaps elegance are sacrificed"),
         and the book by Strom is a massive GSM which is more modern but on the other hand seems to leave every second proof as an exercise to the reader (and the preface, I seem to recall, claims that this
         was done by design). Anyway, homotopy theory is a very interesting subject and I prefer Whitehead despite the age - but of course I am not a specialist.
   </ul>
 
-  <h2><a id="pg-diff">Differential geometry</h2>
+  <h2><a id="pg-diff">Differential and Riemannian geometry</h2>
   <ul>
     <li>John Lee, <em>Introduction to Smooth Manifolds</em>. 700 pages of pure differential geometry for the most gluttonous graduate student. Essentially an encyclopaedia.
     <li>John Lee, <em>Introduction to Riemannian Manifolds</em>. This one is only about 400 pages long, but just as dense as <em>Smooth</em>. Curvature is of course the main
@@ -609,6 +650,11 @@ books with a green star, <span class="fav">thus</span>.
     <li>Loring W. Tu, <em>Differential Geometry</em>. A comparably more friendly book on curvature and Riemannian geometry. The organisation annoys me a bit (it feels like slightly edited lecture notes
         rather than a book - really that should not be a problem and I like plenty of other books which come from lecture notes, I am not too sure what the real problem is here) but I suppose it will
         appeal to a lot of people. Overall I tend to prefer the books by Lee to the books by Tu (except for Bott and Tu versus Lee's <em>Topological</em>).
+    <li>Marcel Berger, <em>A Panoramic View of Riemannian Geometry</em>. I like Berger's writing, this book is very very good; it is not a textbook,
+        it is a guidebook to the theory, like what the book by Holme below on algebraic geometry was supposed to be. Unfortunate that it's published by Springer, I would like to own a quality hardcover
+        but they don't do that kind of thing any more.
+    <li>Peter Petersen, <em>Riemannian Geometry</em>. Now into the third edition (but I have only looked at the first). I find this easier to read than Lee's Riemannian book; I would say it is closer
+        to the writing style of Bredon's <em>Geometry and Topology</em> (see <a href="#alg-top">algebraic topology</a> above). Unfortunately still uses the Einstein summation convention...
   </ul>
 
   <h2><a id="ggt">Geometric group theory</h2>
@@ -667,10 +713,15 @@ books with a green star, <span class="fav">thus</span>.
 
   <h2><a id="pg-complex">Complex analysis and Teichmuller theory</h2>
   <ul>
-    <li>Otto Forster, <em>Lectures on Riemann surfaces</em>. This is a very streamlined account of Riemann surfaces, from definitions to the Riemann-Roch theorem in a very short space of time.
+    <li>Otto Forster, <em>Lectures on Riemann surfaces</em>. This is a very streamlined account of Riemann surfaces, from definitions to the Riemann-Roch theorem in a very short space of time. Quite algebraic
+        which is an advantage to me but might be a disadvantage to an analyst. Alternatively one has the book by Farkas and Kra which should have a more analytic bent, but which I have not read.
     <li>Yōichi Imayoshi and Masahiko Taniguchi, <em>An introduction to Teichmüller spaces</em>. Elementary introduction to moduli spaces and mapping class groups in the complex context, more analytic
-        than geometric.
+        than geometric. For a geometric viewpoint see Thurston's notes in the section on <a href="#ldg-gm">geometric topology</a>, or Farb and Margalit's book below.
     <li>Benson Farb and Dan Margalit, <em>A Primer on Mapping Class Groups</em>. A slow friendly introduction from a more geometric point of view.
+    <li>Kari Astala, Tadeusz Iwaniec, and Gaven Martin, <em>Elliptic PDEs and Qausiconformal Mappings in the Plane</em>. I know nothing about PDEs, but the sections
+        on quasiconformal mappings, holomorphic motions, etc. can be read without that background. Very useful reference particularly because of the large bibliography and lucid writing.
+        Unfortunately it has a tendancy to reference entire books without page or section numbers (e.g. on p.296, "That two different elements share a fixed-point in a Kleinian group has algebraic implications [48]",
+        where [48] is the 300 page book by Beardon on discrete groups -- admittedly it is fairly easy in this case to find the relevant section, but there are more annoying examples I can't find right now).
     <li><strike>Joan S. Birman, <em>Braids, Links, and Mapping Class Groups</em>. To look at.</strike>
   </ul>
 
@@ -709,7 +760,7 @@ books with a green star, <span class="fav">thus</span>.
         (I suppose at this point I should try to advertise the subject, or at least try to explain what it is about: the philosophy is that, whenever you have a polytope in a lattice, the lattice points
         inside the polytope define the ring of functions on a variety that reflects the combinatorial properties of the polytope. In fact it turns out that many many varieties arise in this way and so the
         theory is very applicable. It is also nice in the sense that toric varieties have very regular behaviour compared to arbitrary varieties.) I would recommend this book to people interested only in
-        the combinatorics of polytopes as well, since that half of the book is very easy to read and has a different perspective to something like Ziegler (see above).
+        the combinatorics of polytopes as well, since that half of the book is very easy to read and has a different perspective to something like Ziegler (see the section on <a href="#pg-combinatorics-polytopes">polytopes</a>).
     <li class="fav">William Fulton. <em>Introduction to Toric Varieties</em>. The classical introduction to toric varieties, much faster than Cox/Little/Schenck and also much shorter (~100 pages vs ~800 pages).
         Some nice pictures, too, but leaves even more of the background material assumed.
     <li>Tadao Oda. <em>Lectures on Torus Embeddings and Applications</em> and <em>Convex Bodies and Algebraic Geometry : an introduction to the theory of toric varieties</em>. Oda was one of the original practitioners
