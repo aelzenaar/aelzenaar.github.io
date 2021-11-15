@@ -98,6 +98,7 @@ books with a green star, <span class="fav">thus</span>.
 <ul>
 <li><a href="#pg-ag-sch">Scheme theory</a></li>
 <li><a href="#pg-ag-tor">Toric varieties and combinatorial algebraic geometry</a></li>
+<li><a href="#pg-ag-ab">Abelian varieties; Elliptic curves; Arithmetic geometry</a></li>
 <li><a href="#pg-ag-misc">Miscellaneous</a></li>
 </ul></li>
 <li><a href="dynamics">Dynamical systems</a></li>
@@ -456,6 +457,10 @@ books with a green star, <span class="fav">thus</span>.
   <ul>
     <li>Miles Reid, <em>Undergraduate algebraic geometry</em>. I find this book overly informal and chatty to the point of annoyance, but it is a very easy
         read if you like that kind of book.</li>
+    <li>David Cox, John Little, and Donal O'Shea, <em>Ideals, Varieties, and Algorithms</em>. A very popular book. I don't like it so much but it's just a matter
+        of taste. It treats the subject too much as an extension of linear algebra for my liking (which is a fair enough way of doing things), really my issue
+        is that there is very little of the kind of geometry which I like (and very little application of algebraic geometry to geometry at all - which makes sense
+        given the authors, who are interested in problems like solving systems of equations).
     <li>Audun Holme, <em>A Royal Road to Algebraic Geometry</em>. This is a very gentle introduction to the subject that is very well-motivated if you have some
         experience with projective geometry and classical algebraic geometry (c.f. Kendig's <em>Conics</em> below). Unfortunately the second half seems to be completely
         unedited and is full of typos and mistakes which make it almost unreadable if you are trying to learn the subject.</li>
@@ -662,6 +667,11 @@ books with a green star, <span class="fav">thus</span>.
   <ul>
     <li>Martin R. Bridson and Andre Haefliger, <em>Metric Spaces of Non-positive Curvature</em>. General theory of geometric group actions in both the archimedean and non-archimedean case.
     <li>James E. Humphreys, <em>Linear Algebraic Groups</em>. The study of geometric groups (things like \(\mathrm{GL}(n,k)\)) as geometric objects in their own right. Applications also to representation theory.
+    <li>William Waterhouse, <em>Introduction to affine group schemes</em>. Introduction to SGA-style algebraic groups; contains a nice introduction to the functorial approach to scheme theory, which is a
+        nice motivation for things like Yoneda's Lemma. He says that "there is no prerequisite beyond a training in algebra including tensor products and Galois theory," but clearly "algebra" here means
+        graduate (i.e. Lang-level) algebra. I think that a decent amount of algebraic geometry is also a prerequisite to really getting what is going on; this is the advantage of Humphreys' book (which
+        essentially develops the theory of varieties in-house, as it were). On the other hand this is a very nice introduction once you have got your head around the first couple of chapters of Hartshorne.
+        Another book I should really own but don't.
   </ul>
   <p><strong><a id="ggt-arith">Arithmetic flavour (e.g. buildings, \(p\)-adic fields).</strong>
   <ul>
@@ -740,7 +750,8 @@ books with a green star, <span class="fav">thus</span>.
         to try to read it to learn the definitions and motivation) and go straight to chapter II and maybe IV. But I think it is wrong to try to talk about schemes before learning the
         motivating constructions from classical geometry, they are not very interesting or useful without doing a lot of stuff first since the advantages are very high-level and the
         barriers are very concrete (i.e. abstraction in three different directions at once) - E-H has the advantage of actually motivating scheme-theoretic constructions like blowups
-        and comparing to what is possible with just varieties, which Hartshorne does not do much of.
+        and comparing to what is possible with just varieties, which Hartshorne does not do much of. There are many omissions: for instance, there is no intersection theory, no cohomology,
+        and mainly curves. It does include a brief discussion of the functor of points approach to scheme theory in chapter 6, but I preferred the treatment in
     <li>Ravi Vakil, <em>The Rising Sea: Foundations Of Algebraic Geometry</em>. <a href="http://math.stanford.edu/~vakil/216blog/">Downloadable here.</a> The more modern, friendly introduction to scheme theory.
         Even though it is friendly, it is still (and this should be in big red letters) a massive mistake to try to read these without a good knowledge of the basic theory. You cannot learn scheme theory without
         first internalising the theories which it is supposed to be a generalisation of! (You probably can, in the sense of memorising all the theorems and proofs, but you will miss the geometry - and the whole
@@ -769,6 +780,29 @@ books with a green star, <span class="fav">thus</span>.
         related to the toric theory but has a lower barrier to entry. This book is very readable and has lots of nice applications.
     <li>Ilia V. Itenberg, Grigory Mikhalkin, and Eugenii Shustin. <em>Tropical Algebraic Geometry </em>. A less polished introduction (it is a set of lecture notes) with a different viewpoint.
   </ul>
+
+  <p><strong><a id="pg-ag-ab">Abelian varieties; Elliptic curves; Arithmetic geometry.</strong>
+  <ul>
+    <li>Christina  Lange, <em>Complex Abelian Varieties</em>. An abelian variety is a connected projective algebraic variety that admits an algebraic group structure (i.e. you can define a multiplication
+        of points on the variety satisfying the usual group axioms, with the caveat that the multiplication and the function sending each point to its inverse have to be morphisms). In particular
+        abelian varieties over \( \mathbb{C} \) happen to be precisely the complex torii (i.e. \(\mathbb{C}^n / \Lambda \) for some lattice \(\Lambda\) together with a bilinear form on \(\Lambda\) satisfying
+        two simple relations). Of course a simple example is an elliptic curve. In any case the theory has parallels to the theory of toric varieties. This is a very nice book but you should have
+        some maturity in the theory of algebraic groups, for instance by looking at the book by Cox/Little/Schenck on toric varieties or the book by Humphreys on linear algebraic groups (in the
+        section on <a href="#ggt-gen">geometric group theory</a> above). Some knowledge of Riemannian geometry is also an advantage (really this subject lies in the intersection between algebraic geometry and
+        Riemann geometry).
+    <li>Joseph Silverman, <em> Rational Points on Elliptic Curves</em>; <em>The Arithmetic of Elliptic Curves</em>; <em>Advanced Topics in the Arithmetic of Elliptic Curves</em>; and
+        (co-authored by Marc Hindry) <em>Diophantine Geometry</em>. I am not an arithmetic geometer, but these books almost make me want to be. Essentially they form a series.
+        <p><em>RPoEC</em> is a UTM so by rights should live in the <a href="#algebraic-geometry-334">undergraduate
+        algebraic geometry</a> section above, but it does require readers to be comfortable with projective geometry and basic algebra (basic Galois theory). The highlight for me is the discussion of Fermat's
+        Last Theorem in section 6.6 which goes into much more detail than most other elementary books about the proof method.
+        <p><em>AoEC</em> requires basic algebraic geometry and for you to know what a local field is (i.e. you should know about the \(p\)-adics).
+        <p><em>ATAoEC</em> is too hard for me (it really needs you to know much more class field theory than I am comfortable with).
+        <p><em>DG</em> is somewhat parallel to the two elliptic curves GTMs, doing much of the same thing but with abelian varieties in more generality.
+    <li>Carel Faber, Gerard van der Geer, and Frans Oort (eds.), <em>Moduli of Abelian Varieties</em>. This is here primarily for the paper <em>Toroidal Resolutions for Some Matrix Singularities</em> by Faltings which
+        I once tried to read in the algebraic geometry reading group. Consider it as motivation to understand crystalline cohomology, but it was definitely too hard for that reading group.
+    <li>Serge Lang, <em>Abelian Varieties</em>. This is a harder book on abelian varieties, for once a Lang book in a subject he was actually an expert in.
+  </ul>
+
   <p><strong><a id="pg-ag-misc">Miscellaneous.</strong>
   <ul>
     <li>David Cox (and five others), <em>Applications of Polynomial Systems</em>. Applied algebraic geometry, applied to the "real world" not so much to mathematics: for example splines, rigidity
@@ -780,6 +814,11 @@ books with a green star, <span class="fav">thus</span>.
         much geometry (the subject has a much more logical flavour).
     <li>Frank Sottile, <em>Real Solutions to Equations from Geometry</em>. This is a lot of real algebraic geometry, but actually applied to geometry (primarily enumerative geometry). Another very nice applied-style
         book with some very interesting content.
+    <li>David Cox, John Little, Donal O'Shea, <em>Using Algebraic Geometry</em>. Another applied algebraic geometry book, with topics similar to a mixture of the ones in the books above (but collected in one
+        place): integer programming, polytopes, splines, etc. It also includes coding theory, which (I think) is not in any of the other books I mentioned.
+    <li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em>. Really, this is a book that would fit more in the section on <a href="pg-complex">complex analysis</a> above. Basically
+        this is the generalisation of geometric theorems from the case of Riemann surfaces to more general algebraic varieties over \(\mathbb{C}\). It might be a good place to look if you are reading
+        Hartshorne and don't really understand the geometry behind the intersection theory and cohomology (these are not found in Eisenbud-Harris).
   </ul>
 
   <h2><a id="dynamics">Dynamical systems</h2>
