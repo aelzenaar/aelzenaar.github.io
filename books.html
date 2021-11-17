@@ -57,7 +57,11 @@ books with a green star, <span class="fav">thus</span>.
 <li><a href="#combinatorics-and-finite-geometry-326">Combinatorics and finite geometry</a></li>
 <li><a href="#number-theory">Number theory</a></li>
 <li><a href="#single-variable-analysis-332">Single-variable analysis</a></li>
-<li><a href="#topology">Topology</a></li>
+<li><a href="#topology">Topology</a>
+<ul>
+<li><a href="#topology-ps">Point-set topology</a>
+<li><a href="#topology-gt">Geometric topology</a>
+</ul>
 <li><a href="#complex-calculus-and-analysis-340-341">Complex calculus and analysis</a></li>
 <li><a href="#classical-geometry">Classical geometry</a></li>
 <li><a href="#algebraic-geometry-334">Algebraic geometry for undergraduates</a></li>
@@ -93,7 +97,7 @@ books with a green star, <span class="fav">thus</span>.
 <li><a href="#ldg-gm">Geometric manifolds</a></li>
 <li><a href="#ldg-knots">Knots</a></li>
 </ul></li>
-<li><a href="#pg-complex">Complex analysis and Teichmuller theory</a></li>
+<li><a href="#pg-complex">Complex analysis and Teichmüller theory</a></li>
 <li><a href="#pg-ag">Algebraic geometry</a>
 <ul>
 <li><a href="#pg-ag-sch">Scheme theory</a></li>
@@ -121,7 +125,7 @@ books with a green star, <span class="fav">thus</span>.
         of the target audience).
         <p>
         Let me be more precise: when a layperson (an abuse of terminology which I will use to mean 'non-mathematician' for convenience) writes a mathematical biography (two good examples
-        here: Paul Hoffman's <em>The Man Who Loved Only Numbers</em> (about Paul Erdos) and Simon
+        here: Paul Hoffman's <em>The Man Who Loved Only Numbers</em> (about Paul Erdős) and Simon
         Singh's <em>Fermat's Last Theorem</em> which I would place in the 'biography' super-genre despite being a biography of something inanimate) a full two-thirds of the book is spent
         on discussing mathematical culture through listing off the same few historical events (e.g. stating the <em>Bridges of Konigberg</em> problem, or giving a precis of a biography of Ramanujan).
         On the other hand, mathematicians do not do this - and even when they try, as in Harris' book here, the level of discourse is far beyond the average reader with only minimal mathematical training:
@@ -310,7 +314,7 @@ books with a green star, <span class="fav">thus</span>.
         older edition without design theory. Perhaps a bit chatty and slow to get started, but does cover a lot of random topics that should be of interest both for computer
         science and mathematics.</li>
     <li>Bela Bollobas, <em>Modern Graph Theory</em>; Reinhard Diestel, <em>Graph Theory</em>. Very nice graph theory books. I prefer Bollobas, but Diestel is more modern. Overall
-        I do think that these books are in more in the Erdos-esque camp of mathematical exposition. (Of course Bollobas was also a Hungarian prodigy, so that makes some sense I suppose.)</li>
+        I do think that these books are in more in the Erdős-esque camp of mathematical exposition. (Of course Bollobas was also a Hungarian prodigy, so that makes some sense I suppose.)</li>
     <li>W.D. Wallis, <em>Combinatorial Designs</em>. This book is a very nice introduction to finite geometries and other combinatorial designs. Very readable, a little old.</li>
     <li>Matthias Beck and Sinai Robins with David Austin, <em>Computing the Continuous Discretely</em>. A very readable introduction to polytope combinatorics for undergraduates. Repackages
         a lot of the stuff in Stanley's book on combinatorial commutative algebra and in Ziegler's book in a form digestable with minimal algebra. Very nice little UTM.
@@ -330,6 +334,8 @@ books with a green star, <span class="fav">thus</span>.
         a little slowly, but it eventually gets to elliptic curves and even proves the Mordell-Weil theorem over \(\mathbb{Q}\). It is in this
         section and not the graduate section below because of how self-contained it is: the bare minimum of algebra is needed (basic knowledge of groups, rings, and fields
         at, say, the level of Pinter).</li>
+    <li>Fernando Q. Gouvêa, <em>\(p\)-adic Numbers</em>. This book focuses on the metric structure of the \(p\)-adic numbers; it mainly develops the basic theory for its
+        own intrinsic interest. Unfortunately spends a lot of time trying to avoid doing any commutative algebra, and I found it very slow.
   </ul>
 
   <h3><a id="single-variable-analysis-332">Single-variable analysis</h3>
@@ -357,22 +363,35 @@ books with a green star, <span class="fav">thus</span>.
   </ul>
 
   <h3><a id="topology">Topology</h3>
+  <p><strong><a id="topology-ps">Point-set topology.</strong></p>
   <ul>
     <li>Klaus Jänich, <em>Topology</em>. An easy introduction to topology which isn't rigorous enough for a third- or fourth-year course (and probably not appropriate
         for anyone that's actually done any proper analysis, it's very handwavy), but it does have some very nice pictures. I liked it in first year when I
         wanted to learn more about topology.</li>
-    <li>Jeffrey R. Weeks, <em>The Shape of Space</em>. This is supposed to "fill the gap" between the simple geometric examples of topology (Klein bottles, tori) and
-        the "sophisticated mathematics of upper-level courses". I don't think it does this job very well, but it is a very nice book of geometry that might even
-        be accessible to the layperson. What I would like to see is a book like this that makes explicit the actual links with point-set topology.
-        <p><em>I wrote the previous review in 2018, here is an update for 2021:</em> Of coure what Weeks meant (and I didn't understand at the time) was to link <em>algebraic topology</em>
-        and not <em>point-set topology</em> to the explicit geometry of Thurston etc. I can even name a book which does this with more sophistication (Weeks is really a book
-        for an interested first year student): Bredon's <em>Geometry and Topology</em> which I talk about <a href="#alg-top">below</a>.
     <li class="fav">James R. Munkres, <em>Topology</em>. This is the standard topology book, it's very clear with lots of examples and pictures. I didn't like the section on
           metric spaces, though - use Rudin here, it's a good supplement. Kolmogorov &amp; Fomin is also nice to read alongside.
           <p>Having thought about it for a while, I think it's incredibly likely that this is the textbook I have spent the most time with over the past year:-
           it was used in the topology course I took in 2018, and I must have spent at least an hour a day with it, doing readings or problems. Unfortunately the algebraic topology
           part is not so good, it is very short and does not do the subject justice (it is overly technical, I think).
           <p>(<a href="http://drorbn.net/index.php?title=10-327/Errata_to_Munkres%27_Book">Errata</a>)</li>
+  </ul>
+  <p><strong><a id="topology-gt">Geometric topology.</strong></p>
+  <ul>
+    <li>Jeffrey R. Weeks, <em>The Shape of Space</em>. This is supposed to "fill the gap" between the simple geometric examples of topology (Klein bottles, tori) and
+        the "sophisticated mathematics of upper-level courses". I don't think it does this job very well, but it is a very nice book of geometry that might even
+        be accessible to the layperson. What I would like to see is a book like this that makes explicit the actual links with point-set topology.
+        <p><em>I wrote the previous review in 2018, here is an update for 2021:</em> Of coure what Weeks meant (and I didn't understand at the time) was to link <em>algebraic topology</em>
+        and not <em>point-set topology</em> to the explicit geometry of Thurston etc. I can even name a book which does this with more sophistication (Weeks is really a book
+        for an interested first year student): Bredon's <em>Geometry and Topology</em> which I talk about <a href="#alg-top">below</a>.
+    <li>David Mumford, Caroline Series, and David Wright, <em>Indra's Pearls: The vision of Felix Klein</em>. Another highly visual book, this time about Schottky groups (the easiest of all the Kleinian groups)
+        and their fractal limit sets. Ends up discussing the Maskit slice (the moduli space of punctured torus groups). A lot of computer experiments too (the <a href="http://klein.math.okstate.edu/IndrasPearls/">website
+        for the book</a> has some more stuff, if you dig through the Wayback Machine there is also an archive of FORTRAN-77 code which took a little work to get going on a modern compiler like <tt>gfortran</tt>).
+        See also the lecture <em><a href="https://www.youtube.com/watch?v=YOMr4eviQWs">The Suggestive Power of Pictures</a></em> (Caroline Series).
+    <li>Francis Bonahon, <em>Low-Dimensional Geometry: From Euclidean Surfaces to Hyperbolic Knots</em>. This is a rigorous geometric topology book for undergraduates: the basic theory
+        of Kleinian groups and hyperbolic surfaces, culminating in a short discussion of 3-geometry. Requires very little technical background, it even develops the needed group theory from scratch.
+    <li>Richard Evan Schwartz, <em>Mostly Surfaces</em>. Another surfaces book for undergraduates assuming very very little technical background, this time heading towards Teichmüller theory.
+    <li class="fav">George K. Francis, <em>A Topological Picturebook</em>. How to draw topological pictures by hand: knot theory, mapping class groups, sphere inversions, etc. I appreciated this book when I was
+        an undergraduate.
   </ul>
 
   <h3><a id="complex-calculus-and-analysis-340-341">Complex calculus and analysis</h3>
@@ -413,7 +432,7 @@ books with a green star, <span class="fav">thus</span>.
         properly called the Wirtinger derivative --- yes, the same Wilhelm Wirtinger as the knot group presentation). I really disliked the course (the second most boring mathematics course
         I have ever taken) and so I really disliked this language. Here ends the story.
 
-    <li>Walter Rudin, <em>Real and Complex Analysis</em>. From chapter 10, the best book on complex analysis I have found. It is possible to read
+    <li class="fav">Walter Rudin, <em>Real and Complex Analysis</em>. From chapter 10, the best book on complex analysis I have found. It is possible to read
         the complex analysis half, broadly speaking, without having read the real analysis half; one just needs to replace all the integration
         theorems with less general theorems involving the Riemann integral.</li>
   </ul>
@@ -483,7 +502,7 @@ books with a green star, <span class="fav">thus</span>.
         due to its age. Serving recommendation: read and try to make Salmon's statements precise with projective geometry and/or complex algebra.</li>
   </ul>
 
-  <h3><a id="differential-geometry">Differential geometry</h3>
+  <h3><a id="differential-geometry">Differential geometry.</h3>
   <ul>
     <li>Manfred do Carmo, <em>Differential Geometry of Curves and Surfaces</em>. Differential geometry, without any more machinery than multivariable
         calculus. Quite dry, very computational and really very little geometry. My complaints about Fisher's book on complex calculus <a href="#complex-calculus-and-analysis-340-341">above</a> apply to this
@@ -685,8 +704,6 @@ books with a green star, <span class="fav">thus</span>.
   </ul>
   <p><strong><a id="ggt-geom">Geometric flavour (Kleinian groups and hyperbolic manifolds).</strong> See also the <a href="#ldg">section on low-dimensional geometry</a> below.
   <ul>
-    <li>David Mumford, Caroline Series, and David Wright, <em>Indra's Pearls: The vision of Felix Klein</em>. Another highly visual book, this time about Schottky groups (the easiest of all the Kleinian groups)
-        and their fractal limit sets. Possibly even accessible to undergraduates.
     <li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em>. An elementary introduction to Fuchsian groups (discrete subgroups of \(\mathrm{PSL}(2,\mathbb{R}) \)) and their
         related complex and hyperbolic structures. Minimal topology needed. It doesn't really do enough interesting geometry for me, but it is a good start. The introduction to hyperbolic
         geometry here is mainly useful as a reference for computational formulae.
@@ -694,6 +711,7 @@ books with a green star, <span class="fav">thus</span>.
         with lots of geometry to think about. Some sections can be a bit dry if you are not that interested in combinatorial group theory (especially the final chapters) but once you get the hang of the basics
         you can get away with skipping around a bit to see the highlights. Historically pre-Thurston so the geometry is quite classical.
     <li>Katsuhiko Matsuzaki and Masahiko Taniguchi, <em>Hyperbolic manifolds and Kleinian groups</em>. Even more geometric than Maskit, and now post-Thurston (so for instance there is some material on Dehn surgery).
+        There are a lot of very nice pictures. Unfortunately this book is very hard to come by without spending vast sums of money.
     <li>Michael Kapovich, <em>Hyperbolic Manifolds and Discrete Groups</em>. Another Thurston-esque book which I would put more on the group theory side rather than the geometry side, this book ends with
         a proof of Thurston's hyperbolisation theory for Haken manifolds via a lot of interesting geometric group theory (moduli spaces of groups, measured laminations, the Bass-Serre theory of trees,...).
     <li>Colin Maclachlan and Alan W. Reid, <em>The Arithmetic of Hyperbolic 3-manifolds</em>. Of a slightly different flavour, this book is about Kleinian groups which happen to be arithmetic. Very dense, quite hard.
@@ -712,18 +730,24 @@ books with a green star, <span class="fav">thus</span>.
     <li>Albert Marden, <em>Outer Circles</em>. Much more friendly than Ratcliffe and more detailed than Thurston, but covers far less material as a result. Good if you have less algebraic topology,
         though - a nice introductory book all round.
     <li>Jennifer Schultens, <em>Introduction to 3-Manifolds</em>. An even more friendly introduction, requires only minimal algebraic topology and differential geometry. Nice little book.
+    <li>R. Benedetti and C. Petronio, <em>Lectures on Hyperbolic Geometry</em>. Nice friendly reference for the "big theorems" of hyperbolic geometry (Mostow rigidity and the Margulis lemma), convergence, and
+        the Jorgensen-Thurston theory of Dehn surgery.
+    <li>John Hempel, <em>3-Manifolds</em>. Pre-Thurston 3-manifold theory. It is of historical interest (e.g. to see a lot of concepts that you normally only see in books on surfaces; and to see a book on 3-manifolds
+        which does not use the word "hyperbolic"), and also a good reference for some of the topology since it is ritten at a more elementary level than some post-Thurston books (e.g. provides rigorous foundation for
+        things like cutting manifolds along 2-sided embedded surfaces).
   </ul>
   <p><strong><a id="ldg-knots">Knots.</strong>
   <ul>
-    <li>W.B. Raymond Lickorish, <em>An Introduction to Knot Theory</em>. Essentially an introduction to knot invariants like the Alexander and Jones polynomials.
-    <li>Richard H. Crowell and Ralph H. Fox, <em>Introduction to Knot Theory</em>. Another introductory book but this time more focused on combinatorial group theory. There seem to be two kinds
-        of knot theory books: ones like this and Lickorish which begin with a 50-page detailed discussion of basic algebraic topology (usually \(\pi_1\)) and then spend only 50 pages talking about
-        knots, and books which seem to not be read by mortals (e.g. Thurston). I am still looking for books to bridge the gap.
+    <li>W.B. Raymond Lickorish, <em>An Introduction to Knot Theory</em>. Essentially an introduction to knot invariants like the Alexander and Jones polynomials. This is one of the genre of knot theory books which spends
+        half of the book developing basic algebraic topology, doing only a little knot theory at the end.
+    <li>Richard H. Crowell and Ralph H. Fox, <em>Introduction to Knot Theory</em>. Another introductory book but this time more focused on combinatorial group theory.
     <li>Masanori Morishita, <em>Knots and Primes: An introduction to arithmetic topology</em>. In that vein, here is a book in the latter category. Decidedly not an introductory book, this talks about analogies between
         number theory (you need some class field theory) and knot theory; so you need to be an expert in both fields to read it.
+    <li>Peter Cromwell, <em>Knots and Links</em>. An intermediate level text which doesn't spend 50 pages on defining the fundamental group; this one actually proves the equivalence "two bridge" \(\iff\) "rational".
+        Unfortunately, there is not much geometric topology.
   </ul>
 
-  <h2><a id="pg-complex">Complex analysis and Teichmuller theory</h2>
+  <h2><a id="pg-complex">Complex analysis and Teichmüller theory</h2>
   <ul>
     <li>Otto Forster, <em>Lectures on Riemann surfaces</em>. This is a very streamlined account of Riemann surfaces, from definitions to the Riemann-Roch theorem in a very short space of time. Quite algebraic
         which is an advantage to me but might be a disadvantage to an analyst. Alternatively one has the book by Farkas and Kra which should have a more analytic bent, but which I have not read.
@@ -734,7 +758,8 @@ books with a green star, <span class="fav">thus</span>.
         on quasiconformal mappings, holomorphic motions, etc. can be read without that background. Very useful reference particularly because of the large bibliography and lucid writing.
         Unfortunately it has a tendancy to reference entire books without page or section numbers (e.g. on p.296, "That two different elements share a fixed-point in a Kleinian group has algebraic implications [48]",
         where [48] is the 300 page book by Beardon on discrete groups -- admittedly it is fairly easy in this case to find the relevant section, but there are more annoying examples I can't find right now).
-    <li><strike>Joan S. Birman, <em>Braids, Links, and Mapping Class Groups</em>. To look at.</strike>
+    <li>Benson Farb, Richard Hain, Eduard Looijenga (eds.), <em>Moduli Spaces of Riemann Surfaces</em>. The lecture notes by Minsky and Hamenstädt are the best short introductions (less than 80 pages all together)
+        to mapping class groups and Teichmüller theory which I know of.
   </ul>
 
   <h2><a id="pg-ag">Algebraic geometry</h2>
