@@ -11,7 +11,7 @@
   <style>
     body { padding-left: 10%; padding-top:3em; font-family: 'Zen Kaku Gothic New', sans-serif ; margin-right: 10% }
 /*     body { padding-left: 3em; font-family: 'Zen Kaku Gothic New', sans-serif; background-color:  #e6f2ff ; margin-right: 10% } */
-    div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid black; border-radius: 5px;}
+    div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid black; border-radius: 5px; overflow:auto; }
 /*    div#msc_project {background-color: #ffffbe }
     div#bsc_project {background-color: #ffffbe}
     div#spherical_designs {background-color: #ffffbe}
@@ -40,6 +40,7 @@
   <div id="pubs">
   <h2>Publications and preprints</h2>
   <ol reversed>
+<!--    <li><b>Proceedings article:</b> Alex Elzenaar, Gaven Martin, and Jeroen Schillewaert. "Concrete one complex dimensional moduli spaces of hyperbolic manifolds and orbifolds." In: <i>2021-22 MATRIX annals</i>. Ed. by ... MATRIX Book Series 5. Springer, to appear. <a href="">Preprint link</a>.-->
     <li><b>Preprint:</b> Alex Elzenaar, Gaven Martin, and Jeroen Schillewaert. "Approximations of the Riley slice." November 2021. <a href="https://arxiv.org/abs/2111.03230">arXiv:2111.03230</a> [math.GT].
   </ol>
   </div>
@@ -51,7 +52,7 @@
   corrections asked for by the examiners have been made.
 
   <blockquote>
-  <b>Abstract.</b> It has been known since at least the time of Poincaré that isometries of 3-dimensional hyperbolic space \( \mathbb{H}^3 \) can be represented by \( 2 \times 2\)-matrices over the complex numbers: the
+  <b>Abstract.</b> It has been known since at least the time of Poincaré that isometries of 3-dimensional hyperbolic space \( \mathbb{H}^3 \) can be represented by \( 2 \times 2\) matrices over the complex numbers: the
   matrices represent fractional linear transformations on the sphere at infinity, and hyperbolic space is rigid enough that every hyperbolic motion is determined by such an action at infinity.
   A discrete subgroup of \( \mathrm{PSL}(2,\mathbb{C}) \) is called a Kleinian group; the quotient of \( \mathbb{H}^3 \) by
   the action of such a group is an orbifold, and its boundary at infinity is a (possibly empty or disconnected) Riemann surface.
@@ -95,29 +96,36 @@
 
   </div>
 
-  <div id="bsc_project">
-  <h2>BSc.(hons.) dissertation: <i>Toric Varieties</i></h2>
-  <ul>
-    <li>My dissertation: <a href="hons_dissertation/notes.pdf">Toric Varieties</a>.
-    <li>Half-year postgraduate project presentations, 2020: <a href="hons_dissertation/honourstalk.pdf">Presentation slides</a>.
-  </ul>
-  </div>
-
   <div id="spherical_designs">
   <h2>Spherical designs</h2>
-  I have done research in the field of spherical designs under the direction of <a href="https://www.math.auckland.ac.nz/~waldron/index.html">Shayne Waldron</a>. I produced
-  a <a href="https://www.math.auckland.ac.nz/~waldron/SphericalDesigns/">database of spherical designs</a> funded in part by a University of Auckland Summer Research Scholarship,
-  and then as a research assistant under Prof. Waldron.
+
+  <span style="float:right;width:20%"><img src="tight_frames_project/design.png" alt="A diagram of a spherical design." style="max-width:100%"/><br/>A spherical \((3,3)\)-design in \( \mathbb{R}^3 \) of 16 vectors.</span>
+
+  Spherical \((t,t)\)-designs are arrangements of points on the sphere (possibly with weights) which are spaced `far apart from each other': they are finite sets in \( \mathbb{R}^d \)
+  such that the integral over the sphere of each homogeneous polynomial of degree \(2t\) in \( d \) variables is equal to its average value on the set. There are generalisations
+  of this definition to subsets of \( \mathbb{C}^d \) and \( \mathbb{H}^d \) (the \(d\)-fold product of the Hamiltonian quaternion algebra, not hyperbolic \(d\)-space!).
+
+  <h3>Optimal designs and near-designs</h3>
+  <a href="https://www.math.auckland.ac.nz/~waldron/">Shayne Waldron</a> and I have a paper in preparation: <i>Putatively optimal projective spherical designs with little apparent symmetry</i>,
+  computing various spherical designs in order to find those of minimal order; when this becomes available in the next few weeks a large set of designs and near-designs
+  will become available on Zenodo at <a href="https://doi.org/10.5281/zenodo.6443357">DOI:10.5281/zenodo.6443357</a>. You can already look at the code used to generate these
+  on <a href="https://github.com/aelzenaar/tightframes">GitHub</a>; it uses the <a href="https://www.manopt.org/">Manopt optimisation toolbox</a>. This work was was funded in
+  part by a University of Auckland Summer Research Scholarship (2019-20). You can view the <a href="tight_frames_project/scholarship_report.pdf">final report</a> for the scholarship.
+
 
   <h3>Spherical designs and sums of squares</h3>
   <ul>
     <li>Talk at the UoA algebra and combinatorics seminar, April 2021: <a href="tight_frames_sos/Talk2021.pdf">Presentation slides</a>.
   </ul>
 
-  <h3>2019-2020 Summer research project: Numerical construction of spherical designs</h3>
+  </div>
+
+  <div id="bsc_project">
+  <h2>BSc(Hons) dissertation: <i>Toric Varieties</i></h2>
+  I completed my BSc(Hons) dissertation in 2020 under the supervision of Dr. Jeroen Schillewaert.
   <ul>
-    <li><a href="tight_frames_project/scholarship_report.pdf">Final report</a>
-    <li><a href="https://github.com/aelzenaar/tightframes">The code</a>
+    <li>My dissertation: <a href="hons_dissertation/notes.pdf">Toric Varieties</a>.
+    <li>Half-year postgraduate project presentations, 2020: <a href="hons_dissertation/honourstalk.pdf">Presentation slides</a>.
   </ul>
   </div>
 
