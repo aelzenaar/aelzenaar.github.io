@@ -24,7 +24,7 @@
   <span style="float:right;width:20%;height:15em;margin-top:3em;margin-left:1em;margin-right:-5em"><img src="photo.png" alt="A portrait photo." style="max-width:100%;max-height:100%"/></span>
   <h1>Alex Elzenaar</h1>
 
-  I am a PhD student at the <a href="https://www.mis.mpg.de/">Max-Planck-Institut für Mathematik in den Naturwissenschaften</a> in Leipzig under the supervision of <a href="https://math.berkeley.edu/~bernd/">Prof. Bernd Sturmfels</a>. I usually work in between the areas of geometric group theory, geometric topology, and metric geometry. I am particularly interested in modern classical geometry (for instance as studied by Coxeter and Thurston) and relationships with other branches of mathematics (knot theory, number theory, algebraic geometry, ...).
+  I am at the <a href="https://www.mis.mpg.de/">Max-Planck-Institut für Mathematik in den Naturwissenschaften</a> in Leipzig. I usually work in between the areas of geometric group theory, geometric topology, and metric geometry. I am particularly interested in modern classical geometry (for instance as studied by Coxeter and Thurston) and relationships with other branches of mathematics (knot theory, number theory, algebraic geometry, ...).
 
   <p>
 
@@ -73,11 +73,11 @@
   <h2>Recent talks I have given</h2>
   Here is a list of talks I have given this year (2022). Older slides can be found below in their respective sections.
   <ol reversed>
+    <li>(Upcoming) <b>10 May 2023</b>: <i>Manifolds, braids, and hypergeometric functions</i>, in the RePS at Universität Leipzig.
     <li><b>16 March 2023</b>: <i>Connectedness of the Hilbert scheme</i> in reading group of Javier and Angel, <a href="tchng/hilb.pdf">lecture notes</a>
     <li><b>17 to 20 January 2023</b>: <i>Apocrypha and ephemera on the boundaries of moduli space</i> now in minicourse form (Uni. of Auckland). <a href="#ephemera">See below!</a>
     <li><b>7 December 2022</b>: <i>Apocrypha and ephemera on the boundaries of moduli space</i> at MPI, <a href="tchng/ephemera.pdf">Lecture notes</a> (these are full of errors, use at your own risk).
-    <li><b>10 October 2022</b>: <i>Uniformisation, equivariance, and vanishing: three kinds of functions hanging around your Riemann surface</i>, at MPI, <a href="tchng/riemann.pdf">Lecture notes</a>. Subsequent to
-        this, <a href="riemann/schottky.pdf">Remarks on computing the algebraic curve corresponding to a Riemann surface</a>.
+    <li><b>10 October 2022</b>: <i>Uniformisation, equivariance, and vanishing: three kinds of functions hanging around your Riemann surface</i>, at MPI, <a href="tchng/riemann.pdf">Lecture notes</a>.
     <li><b>21 September 2022</b>: <i>What is a Kleinian group?</i>, a talk aimed at undergraduates and beginning postgraduate students in the <a href="https://www.apacmath.org/">Australian Postgraduate Algebra Colloquium</a>, <a href="kg/whatis.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=XNPnRach8lI">recording</a>.
     <li><b>3 August 2022</b>: Reproducibility in Computer Algebra (MPI MIS), <a href="tchng/repro.html">handouts for practical activity</a> (event co-organised with Christiane Görgen and Lars Kastner)
     <li><b>15 July 2022</b>: <i>On the MathRepo page "Farey Polynomials"</i>, in the MathRepo: Data for and from your Research event (MPI MIS), <a href="mathrepo.pdf">slides</a>
@@ -86,6 +86,36 @@
     <li><b>27 April 2022</b>: <i>Strange circles: The Riley slice of quasi-Fuchsian space</i>, in the Seminar on Nonlinear Algebra (MPI MIS), <a href="kg/detalks/rileyslice.pdf">slides</a>
     <li><b>17 March 2022</b>: <i>Strange circles: The Riley slice of quasi-Fuchsian space</i>, in <a href="https://www.math.auckland.ac.nz/~hekmati/LearningSeminar2022.html">Pedram Hekmati's seminar on moduli spaces</a> (Uni. of Auckland), <a href="kg/pedram_talk.pdf">slides</a>.
   </ol>
+  </div>
+
+  <div id="schottky">
+  <h2>Representation of algebraic curves by Schottky groups</h2>
+  <span style="float:right;width:40%;margin-left:2em;"><img src="schottky2.1.000.png" alt="A sculpture in the landscape." style="max-width:100%"/></span>
+  What is a Riemann surface?
+  <dl>
+    <dt>Analytically:</dt><dd>A 2-dimensional manifold (or orbifold) admitting a chart of conformal maps into \( \mathbb{C} \) with conformal transition maps.</dd>
+    <dt>Algebraically:</dt><dd>An algebraic curve over \( \mathbb{C} \).</dd>
+    <dt>Geometrically:</dt><dd>The quotient of a 2-dimensional geometric manifold by a discrete group of isometries.</dd>
+  </ul>
+
+  <p>
+  There are two kinds of theorems which relate the different viewpoints. First, theorems on rings of functions: the ring of global meromorphic functions on an analytic Riemann surface
+  is isomorphic to a one-dimensional function field over \( \mathbb{C} \) and defines a birationality class of algebraic varieties, setting up an equivalence between the analytic
+  and algebraic worlds. Secondly, uniformisation theorems. Traditionally, one uniformises general (genus \( \geq 2 \) ) analytic Riemann surfaces by Fuchsian groups,
+  i.e. one writes the surface as a quotient \( \mathbb{H}^2/G \) where \( G \) is a discrete group of hyperbolic isometries and is identified with the holonomy
+  group of the surface. However, it is also possible to uniformise all Riemann surfaces by a class of groups of isometries of \( \mathbb{H}^3 \)! This is the class
+  of <b>Schottky groups</b>.
+
+  <p>
+  In an upcoming paper with <a href="https://sites.google.com/view/sfairchild/home">Samantha Fairchild</a> and Angel David Rios Ortiz we analyse (following earlier work
+  of Rubén Hidalgo among others) the procedure to go from a Schottky group to the corresponding birationality class of algebraic curves.
+
+  <p>
+  In addition, some thoughts on <a href="riemann/moduli.pdf">relationships between moduli of Schottky groups and moduli of algebraic curves</a>.
+
+  <p>
+  Related to this upcoming paper, I survey the three different worlds and some classical theorems (with many examples of Kleinian and Fuchsian groups)
+  in the notes <a href="tchng/riemann.pdf">Uniformisation, equivariance, and vanishing&mdash;Three kinds of functions hanging around your Riemann surface</a>.
   </div>
 
   <div id="ephemera">
