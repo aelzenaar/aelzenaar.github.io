@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+body { padding-left: 10%; padding-top:3em; font-family: 'Fira Sans', sans-serif ; margin-right: 15% ; line-height: 1.43; background: #DAE3E5 ; text-align: justify; text-justify: inter-word; }
+blockquote {max-width:70%; border-left: thick solid #507DBC; padding:1em; background: #BBD1EA}
+div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid #507DBC; border-radius: 5px; overflow:auto; }
+.fav:before {content:"✵";color:green;font-size:200%}
+h1, h2 {color: #507DBC}
+
+span.rightmargin {float:right; width:20%; margin-left:2em; clear:both;margin-top:2em }
