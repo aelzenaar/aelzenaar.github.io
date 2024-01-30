@@ -101,6 +101,25 @@ the pictures below is in the <tt>examples/</tt> directory.
 </tr>
 
 <tr>
+  <td>A B-group with an accidental parabolic</td>
+  <td>A B-group is an analytically finite group such that its domain of discontinuity \(\Omega\) has a simply connected invariant component. There
+  are three kinds of B-groups: quasi-Fuchsian groups (where \(\Omega\) has exactly two components); degenerate groups (where \(\Omega\) has exactly
+  one component); and groups with accidental parabolics. Suppose \(\Delta\) is an invariant component of a B-group \(G\). A group \(\tilde{G}\) with
+  invariant component \(\tilde\Delta\) is conformally similar to \(G\) if there is an isomorphism \( f_* : G \to \tilde{G} \) and a conformal
+  map \( f : \Delta \to \tilde{\Delta} \) such that \( f_*(g)(z) = g(f(z)) \) for all \(g \in G, z \in \Delta\); a parabolic \( j \in G \) is accidental
+  if there exists such a group \( \tilde{G} \) and a similarity such that \( f_* j  \) is not parabolic.
+
+  Using [M, Exercise IX.I.4] we construct a B-group with an accidental parabolic out of the modular group. The first two generators are the usual modular
+  group generators, and the third is a conjugate of the involution by \( u(z) = z + 4i \):
+
+  \[ S = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}, \quad j = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}, \quad u S u^{-1} = \begin{bmatrix} 4i & 15 \\ 1 & -4i \end{bmatrix} \]
+
+  The resulting quotient does not have any cusps, despite the existence of a parabolic element.
+  </td>
+  <td><a href="accidental_parabolic.png"><img src="accidental_parabolic.png" width="100%"/></a></td>
+</tr>
+
+<tr>
   <td>Geometrically infinite group of the second kind</td>
   <td>A geometrically infinite discrete group on two generators; the example is due to Jørgensen [KAG, example 53]. For some parameter \(m\), set
       \( \lambda = \exp(\pi i/2m) \), \( \phi = \frac{1}{2} (1 + \sqrt{17 - 8\cos(\pi/m)}) \), \( \rho = \frac{1}{2}(\sqrt{\phi + 2} + \sqrt{\phi - 2}) \),
