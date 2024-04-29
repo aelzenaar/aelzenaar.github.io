@@ -6,3 +6,15 @@ div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padd
 h1, h2 {color: #507DBC}
 
 span.rightmargin {float:right; width:20%; margin-left:2em; clear:both;margin-top:2em }
+
+/* Below: old-style font and colours */
+
+/*@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap");
+body { padding-left: 10%; padding-top:3em; font-family: 'Zen Kaku Gothic New', sans-serif ; margin-right: 15% ; line-height: 1.43; background: white ; }
+blockquote {max-width:70%; border-left: thick solid black; padding:1em; background: #eee}
+div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid black; border-radius: 5px; overflow:auto; }
+.fav:before {content:"✵";color:green;font-size:200%}
+h1, h2 {color: black}
+
+span.rightmargin {float:right; width:20%; margin-left:2em; clear:both;margin-top:2em }
+*/
