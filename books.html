@@ -615,9 +615,8 @@ books with a green star, <span class="fav">thus</span>.
         I still prefer commutative algebra, though.
     <li>J.-P. Serre, <em>Representations of Finite Groups</em>. Fast and clean introduction to representation theory. Not my favourite book by Serre. I think the problem is that in his exposition the subject
         seems quite shallow.
-    <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em>. I usually like Joe Harris' books, but this one did not click with me. I think it is just my dislike of pure
-        group theory and lack of real knowledge about Lie groups. Perhaps I will come back to it at some point and really enjoy it, I wouldn't be surprised.
-        <p><em>Indeed yes, I came back to it and did enjoy it. This is actually a very very nice introduction to Lie groups as well! (2022)</em>
+    <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em>. This is a useful book that has a small amount of finite representation theory and then a good chunk of Lie group
+    representation theory. It is a nice first book on Lie groups if you are coming from a heavily algebraic background.
   </ul>
 
 
@@ -715,6 +714,7 @@ books with a green star, <span class="fav">thus</span>.
         graduate (i.e. Lang-level) algebra. I think that a decent amount of algebraic geometry is also a prerequisite to really getting what is going on; this is the advantage of Humphreys' book (which
         essentially develops the theory of varieties in-house, as it were). On the other hand this is a very nice introduction once you have got your head around the first couple of chapters of Hartshorne.
         Another book I should really own but don't.
+    <li>David B.A. Epstein et. al., <em>Word processing in groups</em>. The theory of automatic groups and broad theoretical computation aspects of combinatorial group theory. See <a href="https://mathoverflow.net/questions/420294/group-theory-with-grep">Group theory with <tt>grep</tt></a>.
   </ul>
   <p><strong><a id="ggt-arith">Arithmetic flavour (e.g. buildings, \(p\)-adic fields).</strong>
   <ul>
@@ -736,24 +736,35 @@ books with a green star, <span class="fav">thus</span>.
         really different Fuchsian groups so I'm not sure what else he could have done, really --- maybe if he didn't restrict to the surface theory so early there would be scope for more
         interest). Because of these problems I would tend to recommend Bonahon (in the <a href="#ldg">low-dimension geometry</a> section) for beginners/undergraduates unless you are really
         into the linear algebra point of view.
-    <li class="fav">Bernard Maskit, <em>Kleinian Groups</em>. Now this is more like it. Much faster introduction and now more generally about Kleinian groups (discrete subgroups of \(\mathrm{PSL}(2,\mathbb{C}) \)),
-        with lots of geometry to think about. Once you get the hang of the basics you can get away with skipping around a bit to see the highlights: for instance, the various geometric constructions in Chapter VIII.
-        A very classical viewpoint throughout (i.e. the basic objects of study are conformal maps): for a book to read after this, see Matsuzaki-Taniguchi below.
+    <li class="fav">Bernard Maskit, <em>Kleinian Groups</em>.
+        Compared to Beardon, this is a much more demanding book. Maskit takes the philosophical point of view that the primary basic objects of study are conformal automorphisms of the Riemann
+        sphere, rather than isometries or manifolds or matrix groups. His goal is to get to the classification of function groups, and he takes a straight line to get there from the definitions
+        with only a couple of deviations (one chapter on basic covering theory of Riemann surfaces which can safely be skipped, and one chapter on geometric examples which are interesting but
+        quite limited). The first six chapters are basic general theory of discrete groups of isometries in Euclidean, spherical, and hyperbolic geometries, and the final four chapters are the exposition
+        of the classification of B-groups and function groups.
         <p>
-        The first six chapters are basic general theory of discrete groups of isometries in Euclidean, spherical, and hyperbolic geometries. The final four chapters are an exposition
-        of the classification of B-groups and function groups. The goal is basically to get there as quickly as possible and so the book is missing some things which you would expect
-        from a general textbook (e.g. no Lie theory like the Kazhdan-Margulis lemma, no knot groups, etc) and expects quite a bit of background in complex analysis and classical geometry.
-        In my 2021 course we supplimented Maskit with Beardon, Kapovich, and Thurston's lecture notes (mainly chapter 7).
+        The book is missing some things which you would expect from a general textbook (e.g. no Lie theory like the Kazhdan-Margulis lemma, no knot groups, etc) and expects quite a bit of background
+        in complex analysis and classical geometry (e.g. as you would learn from the textbook of Ahlfors). In my 2021 course we supplemented Maskit with Beardon, Kapovich, and Thurston's lecture notes
+        (mainly chapter 7).
         <p>
         He claims in the introduction that the core of the book (i.e. all but chapters III and VIII) work as a one-year postgraduate course, which is basically correct in my experience:
         we covered the first six chapters in one semester (plus some additional background and content and minus some stuff that we skipped).
-    <li>Katsuhiko Matsuzaki and Masahiko Taniguchi, <em>Hyperbolic manifolds and Kleinian groups</em>. Even more geometric than Maskit, and now post-Thurston (so for instance there is some material on Dehn surgery).
-        There are a lot of very nice pictures - c.f. my complaints about the lack of pictures in Ratcliffe, and compare the pictures of the figure 8 knot tetrahedron gluing in Ratcliffe (pp.448-449) with that in M-T (p.34).
-        This seems to be the only book which presents the quasiconformal deformation theory of Kleinian groups in detail - otherwise you need to try to read the
-        series of papers <em>Quasiconformal Homeomorphisms and Dynamics I-III</em> by Dennis Sullivan (part III coauthored with Curtis McMullen), or the lecture notes <em>Deformation Spaces</em> by Kra (chapter 4 of <em>A Crash Course on Kleinian Groups</em>, Springer LNM 400); and both of these are written for people already in the subject. Unfortunately this book is very hard to come by without
-        spending vast sums of money.
-    <li>Michael Kapovich, <em>Hyperbolic Manifolds and Discrete Groups</em>. Another Thurston-esque book which I would put more on the group theory side rather than the geometry side, this book ends with
-        a proof of Thurston's hyperbolisation theory for Haken manifolds via a lot of interesting geometric group theory (moduli spaces of groups, measured laminations, the Bass-Serre theory of trees,...).
+    <li>Ken'ichi Ohshika, <em>Discrete groups</em>.
+        This is a less wll-known elementary Kleinian groups book, which is different from others in that it is pitched at geometric group theorists. The point of view taken
+        is that techniques from Kleinian group theory often require only properties true of groups with non-negative curvature. There are three chapters (plus one preliminary chapter):
+        Gromov-style hyperbolic group theory, the theory of automatic groups, and the basic theory of Kleinian groups (including the construction of B-groups which are geometrically infinite).
+        This could work well as a beginning graduate textbook in infinite group theory.
+    <li>Katsuhiko Matsuzaki and Masahiko Taniguchi, <em>Hyperbolic manifolds and Kleinian groups</em>.
+        This book, which is a second course in Kleinian groups from the point of view of conformal analysis after reading the first half of Maskit or the whole of Beardon, deserves to
+        be much better-known. The main highlight of the book is a detailed exposition of quasiconformal deformation theory; Marden (in <em>Hyperbolic manolds</em>) does sketch a lot of
+        the theory but this book is the only real textbook (save maybe <em>Deformation Spaces</em> by Kra (chapter 4 of <em>A Crash Course on Kleinian Groups</em>, Springer LNM 400).
+        <p>
+        Other aspects of the book beyond the quasiconformal theory include very detailed expositions of cusp structure and limit set structure, infinite ends, and convergence questions, along with
+        some very nice pictures and diagrams. Unfortunately this book is very hard to come by without spending vast sums of money.
+    <li>Michael Kapovich, <em>Hyperbolic Manifolds and Discrete Groups</em>.
+        This is another second course, which focuses much more on the algebra than the analysis or the geometry. It is essentially an exposition of a proof of Thurston's hyperbolisation theorem for
+        Haken manifolds via a lot of interesting geometric group theory (moduli spaces of groups, measured laminations, the Bass-Serre theory of trees,...). This works as a second course
+        following a book like that of Ohskiha or Ratcliffe.
     <li>Colin Maclachlan and Alan W. Reid, <em>The Arithmetic of Hyperbolic 3-manifolds</em>. Of a slightly different flavour, this book is about Kleinian groups which happen to be arithmetic.
         Very dense and quite hard: the book requires readers to know both basic facts about number fields (not least, be able to understand why questions relating to them are interesting) and
         the geometry of Kleinian groups of the first kind (e.g. as in Ratcliffe). We have tried to run reading groups on this book before and it has never been successful since it is very hard to find
@@ -788,11 +799,11 @@ books with a green star, <span class="fav">thus</span>.
         Overall perhaps the first hollistic introduction to Kleinian groups and 3-manifold geometry accessible to a beginning graduate student, but the large-scale structure of the book does not seem particularly
         well organised and the difficulty jumps around (in some sections he seems to be addressing beginning students, in other students he seems to be writing only for people who are already experts in
         the subject, and there does not seem to be much logic to the split between the two). Noticably large number of typos which is disappointing given the price, and most of the changes from the
-        first edition to the second seem to be additions glued on rather than worked in well. Highly recommended, but unfortunately very expensive.
+        first edition to the second seem to be additions glued on rather than carefully edited into the text. Highly recommended, but unfortunately very expensive.
     <li>R. Benedetti and C. Petronio, <em>Lectures on Hyperbolic Geometry</em>. Nice friendly reference for the "big theorems" of hyperbolic geometry (Mostow rigidity and the Margulis lemma), convergence, and
         the Jorgensen-Thurston theory of Dehn surgery.
     <li>John Hempel, <em>3-Manifolds</em>. Pre-Thurston 3-manifold theory. It is of historical interest (e.g. to see a lot of concepts that you normally only see in books on surfaces; and to see a book on 3-manifolds
-        which does not use the word "hyperbolic"), and also a good reference for some of the topology since it is ritten at a more elementary level than some post-Thurston books (e.g. provides rigorous foundation for
+        which does not use the word "hyperbolic"), and also a good reference for some of the topology since it is written at a more elementary level than some post-Thurston books (e.g. provides rigorous foundation for
         things like cutting manifolds along 2-sided embedded surfaces).
   </ul>
   <p><strong><a id="ldg-knots">Knots.</strong>
@@ -809,7 +820,8 @@ books with a green star, <span class="fav">thus</span>.
         <p>
         This book is of the opinion that the primary way to work with 3-manifolds is via triangulations. This is certainly a point of view. Unfortunately regular readers will be aware that I don't share it, but many books struggle to have an opinion on anything (I will write more on this when I get around to finishing my essay on writing) and if you like combinatorial points of view and are a beginning graduate student to whom Thurston's notes look daunting this is probably a book you will like or find useful.
         <p>The first few chapters follow Thurston's lecture notes fairly closely but are pitched at the level of an upper level undergraduate or masters student. The discussion of Dehn filling space is useful
-           (I used it as a reference in the 2023 minicourse). Remaining parts of the book are broadly about the computation of invariants that can be found via triangulations.
+        since it is not found elsewhere in this form except for the primary sources (I used it as a reference in the 2023 minicourse) but it has some issues, see below. Remaining parts of the book are broadly
+        about the computation of invariants that can be found via triangulations.
     <li>Lois Kauffman, <em>On Knots</em> and <em>Knots and Physics</em>. I think in my 2023 notes I called <em>OK</em> "whimsical". Perhaps not as whimsical as <em>Journey into Geometries</em>, but still incredibly
         weird (not in a bad way); somehow <em>K+P</em> is even weirder. Certainly these are books with opinions.
         <p>
@@ -821,6 +833,9 @@ books with a green star, <span class="fav">thus</span>.
         the book by John R. Taylor (Dover).
     <li>Dale Rolfsen, <em>Knots and Links</em>. This book is primarily interested in homological invariants and fibrations. It was also useful to me but not as useful as Kauffman's <em>On knots</em> or Burde and Zieschang.
     <li>Gerhard Burde, Heiner Zieschang, Michael Heusener, <em>Knots</em>. This is a very thick knot theory handbook which I have found useful primarily for the expositions of braid theory and two-bridge links.
+    <li>V.V. Prasolov and A.B. Sossinsky, <em>Knots, Links, Braids and 3-Manifolds</em>. Another 'triangulations, Dehn surgeries, and homology invariants' book, this one notable for being surprisingly
+        readable in the Russian style. I complained above about knot theory books which spend the first half explaining carefully what a fundamental group is; somehow this is the opposite kind of book, which
+        doesn't do any fundamental group work at all and immediately begins with the Jones polynomial and other more homological objects. There is also a very nice treatment of Dehn surgery theory.
   </ul>
 
   <h2><a id="pg-complex">Complex analysis and Teichmüller theory</h2>
@@ -935,6 +950,7 @@ books with a green star, <span class="fav">thus</span>.
     <li>Joe Silverman, <em>Arithmetic of Dynamical Systems</em>. A very nice introduction to dynamics over our favourite mathematical objects (local fields, of course). You need only
         minimal arithmetic geometry for this, and really it is even a nice introduction to dynamics over \(\mathbb{C}\). I like Silverman's writing style anyway, so this is my preferred
         complex dynamics book.
+    <li>John Milnor, <em>Dynamics in one complex variable</em>. The classic introduction to complex dynamics, very readable, takes quite a topological viewpoint.
 </div>
 
 <div>
