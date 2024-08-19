@@ -16,7 +16,7 @@
 
 <p><a href="/">Go back to my homepage.</a>
 
-<p><i>This list was formerly on my "NCEA notes" GitHub page. I have updated it and moved it here (Nov. 2021). Edited Aug 2024 to remove some stub reviews and expand others. Note to self: add sections on Lie groups/algebras, braid groups, and conformal analysis.
+<p><i>This list was formerly on my "NCEA notes" GitHub page. I have updated it and moved it here (Nov. 2021). Edited Aug 2024 to remove some stub reviews and expand others. Note to self: add sections on braid groups, and conformal analysis.
 </i>
 
 <p>
@@ -77,6 +77,7 @@ books with a green star, <span class="fav">thus</span>.
 <li><a href="#pg-algebra-lin">Linear algebra</a></li>
 <li><a href="#pg-algebra-com">Commutative algebra</a></li>
 <li><a href="#pg-algebra-rep">Rings and group representations</a></li>
+<li><a href="#pg-lie">Lie groups and algebras</a></li>
 </ul></li>
 <li><a href="#pg-nt">Number theory</a></li>
 <li><a href="#pg-combinatorics">Combinatorics</a>
@@ -416,17 +417,19 @@ books with a green star, <span class="fav">thus</span>.
         like Cauchy's theorem. It has the great advantage of doing an awful lot of geometry.
         <p>
         In 2021 Needham published a second book like this, <em>Visual Differential Geometry and Forms: A Mathematical Drama in Five Acts</em> - I haven't had a chance to look
-        at it yet, but judging by VCA it should be well worth looking at.
+        at it yet, but judging by VCA it should be worth looking at.
         </li>
     <li>Elias Wegert, <em>Visual Complex Functions</em>. Another visual book, of a different style to Needham. This book develops the theory with proper
         proofs, and has a much more analytic flavour. The tool of choice here is the 'graph' (in some sense) of the complex function; this is in
-        contrast to Needham's approach via differentiation.</li>
-    <li>Joseph L. Taylor, <em>Complex Variables</em>. This is a new and shiny (2011) book that is roughly at the level of a first course. It's OK.</li>
-    <li>John Conway, <em>Functions of One Complex Variable I</em>. I found this book to be readable, but very slow.</li>
+        contrast to Needham's approach via differentiation. Another difference from Needham is that the theory is developed at a higher technical level
+        with full proofs given and with a much more analytical flavour (fully motivated); and the amount of material beyond just basic complex calculus is also more than
+        that found in Needham (including a study of Riemann surfaces). The discussions of harmonic and conformal functions are also very interesting.
+    <li>John Conway, <em>Functions of One Complex Variable I</em>. This is a very classic book which is often recommended as an undergraduate complex analysis book. I found it book
+        to be readable, but very slow.</li>
     <li>Lars Ahlfors, <em>Complex Analysis</em>. This is a little old-fashioned, but very geometric. My main issue is that everything is done by partial
         differentiation and differential forms; there is also not a lot of emphasis on series representations (analyticity) in the first
         half of the book.
-        <p><em>I wrote the previous review in 2018, here is an update for 2021:</em>  (1) To add to what I said, because of the reliance on differential forms
+        <p><em>I wrote the previous remarks in 2018, here is an update for 2021:</em>  (1) To add to what I said, because of the reliance on differential forms
         you probably should have had a read of one of the multivariable calculus books like Spivak first. (2) What I said was an issue is now (I think) a good thing:
         the language of differential forms is a very pleasant way to phrase complex analysis. The simplest manifestation of this is, of course, the
         statement of the Cauchy-Riemann equations in this language: they just become \( \frac{df}{d\overline{z}} = 0 \). In any case this is now my preferred treatment
@@ -508,9 +511,10 @@ books with a green star, <span class="fav">thus</span>.
         unlike Harris which develops more rigid intuition (I know this is very vague and I apologise) and the result is that I think Harris is a better book for budding pure algebraic geometers
         while Shafarevich is better for those who want to apply algebraic geometry to other parts of mathematics (beyond number theory, of course, which is more rigid). This kind of explains why
         I don't like volume 2 (on schemes) so much --- I write about this <a href="#pg-ag-sch">below</a> in the section on scheme theory.
-    <li class="fav">Keith Kendig, <em>Conics</em>. This book is everything you always suspected about conic sections and it is amazing. Please read it.</li>
+    <li class="fav">Keith Kendig, <em>Conics</em>. This book is everything you always suspected about conic sections and it is amazing. It is basically at the level of a good secondary school student
+        who has basic calculus.</li>
     <li>George Salmon, <em>A Treatise on Conic Sections</em>. If you read Kendig and want to know more, this book (from the 1800s) is very good but a little difficult to read
-        due to its age. Serving recommendation: read and try to make Salmon's statements precise with projective geometry and/or complex algebra.</li>
+        due to its age. Serving suggestion: try to make Salmon's statements precise with projective geometry and/or complex algebra.</li>
   </ul>
 
   <h3><a id="differential-geometry">Differential geometry.</h3>
@@ -611,12 +615,31 @@ books with a green star, <span class="fav">thus</span>.
 
   <p><strong><a id="pg-algebra-rep">Rings and group representations.</strong>
   <ul>
-    <li>T.Y. Lam, <em>A First Course in Noncommutative Rings</em> and <em>Lectures on Modules and Rings</em>. These books taught me to love noncommutative ring theory. Excellent books, very nicely written.
-        I still prefer commutative algebra, though.
-    <li>J.-P. Serre, <em>Representations of Finite Groups</em>. Fast and clean introduction to representation theory. Not my favourite book by Serre. I think the problem is that in his exposition the subject
-        seems quite shallow.
+    <li>T.Y. Lam, <em>A First Course in Noncommutative Rings</em> and <em>Lectures on Modules and Rings</em>. These are two excellent books on non-commutative ring theory, which I found very useful
+    for the ring theory half of 721. They are probably not very useful to the average student who is just learning algebra, who should probably be reading the ring theory parts of Aluffi or a commutative
+    algebra book like Atiyah and Macdonald first; but to the student who already knows what the basic theory of group representations looks like (e.g. they understand the importance of adjectives like
+    semisimple) or has already learned commutative ring theory (e.g. they understand things like the Jacobson radical) these are excellent books and they make the theory very appealing. The <em>First Course</em>
+    covers essentially the generalisations to non-commutative rings of very familar concepts: Noetherian and Artinian rings, local rings, semisimple rings. The <em>Lectures</em> cover homology theory (projective
+    and injective modules, for example) and other generalisations of concepts which we see in geometry like flat families and localisations.
+    <li>J.-P. Serre, <em>Representations of Finite Groups</em>. The first half is a fast and clean general first introduction to representation theory for finite groups: Maschke's theorem, Schur's lemma,
+    character theory, group algebras. The remaining portions of the book are more specialised, discussing the representation theorems of Brauer; I have not had much use for these later sections, since they
+    do not seem to involve ideas which are applicable outside of the finite setting. This isn't my favourite book by Serre, I suspect part of the problem is that it is several different things glued together
+    in one book.
     <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em>. This is a useful book that has a small amount of finite representation theory and then a good chunk of Lie group
-    representation theory. It is a nice first book on Lie groups if you are coming from a heavily algebraic background.
+    representation theory. It is a nice first book on Lie groups if you are coming from a heavily algebraic background. However, if you are used to books by Harris it should come as no surprise that it's
+    essentially written as an exploration through a bunch of examples and building only as much theory as is needed to do each example as it comes. This means that it's not so useful as a book to look
+    things up in later (unless you want something that is specifically an example which they cover). <em>Note:</em> Below, there is a <a href="#pg-lie">separate section</a> on Lie groups.
+  </ul>
+
+  <p><strong><a id="pg-lie">Lie groups and algebras.</strong>
+  <ul>
+    <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em>. This is an elementary book which covers only the case of matrix Lie groups, and takes a very concrete view throughout. It
+    also emphasises the role of the groups rather than the Lie algebras (many other introductory books, e.g. that of Humphreys, primarily focus on representation theory of the Lie algebras rather than
+    the global geometry). If your goal is to very quickly get to the definitions of Weyl groups and roots, you can easily skim large parts of this book very quickly and pick up some minimal machinery
+    in order to look at the semisimple theory without spending weeks and weeks trying to get through technical background.
+    <li>Anthony Knapp, <em> Lie Groups Beyond an Introduction</em>. This is a more detailed book on Lie groups and algebras. It is very well motivated with detailed examples at the start of the book
+    and also before many of the technical sections where the theory is worked out 'in advance' for certain special groups in order to prepare the reader and hint at what is to come. There are also a
+    great number of interesting exercises.
   </ul>
 
 
