@@ -7,8 +7,8 @@
 }
 
 body { padding-left: 10%; padding-top:3em; font-family: 'Zen Kaku Gothic New', sans-serif ; color: var(--dark); margin-right: 15% ; line-height: 1.43; background: var(--vlight); }
-blockquote {max-width:70%; border-left: thick solid var(--dark); padding:1em; background: var(--light) }
-div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:1em; border: 2px solid var(--dark); border-radius: 5px; overflow:auto; }
+blockquote {max-width:70%; border-left: thick solid var(--dark); padding:.5em 1em; background: var(--light);}
+div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:.25em; border: 2px solid var(--dark); border-radius: 5px; overflow:auto; }
 .fav:before {content:"✵";color:green;font-size:200%}
 h1, h2 {color: var(--dark)}
 
