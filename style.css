@@ -16,8 +16,8 @@ div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padd
 .fav:before {content:"✵";color:green;font-size:200%}
 h1, h2 {color: var(--dark)}
 
-a {text-decoration: none;}
-a:hover {text-decoration: underline}
+a[href] {text-decoration: none;}
+a[href]:hover {text-decoration: underline}
 
 span.rightmargin {float:right; width:20%; margin-left:2em; clear:both;margin-top:2em }
 
