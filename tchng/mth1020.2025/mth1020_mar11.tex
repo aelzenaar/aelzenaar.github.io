@@ -1,0 +1,94 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{cfr-lm}
+
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[inline]{enumitem}
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
+\usepackage[english]{babel}
+\usepackage[autostyle, english=british]{csquotes}
+\MakeOuterQuote{"}
+
+\usepackage[backend=biber,style=alphabetic,autocite=inline]{biblatex}
+\addbibresource{biblio.bib}
+\usepackage{makeidx}
+\makeindex
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usetikzlibrary{babel}
+\usetikzlibrary{shapes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{physics}
+
+\usepackage{hyperref}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+
+
+\begin{document}
+  \begin{center}
+    {\huge\textbf{MTH 1020 Tutorial 1 (Wk 2)}}
+  \end{center}
+
+  \section{Agenda}
+  \begin{enumerate}
+    \item \textbf{As you come in:} Take a question sheet corresponding to the email you got last week. If you didn't get an email come and see me.
+    \begin{center}
+    \begin{tabular}{ll}
+      Mathematician & Question number\\
+      \colorbox{LimeGreen}{Galois} & \colorbox{LimeGreen}{Q1}\\
+      \colorbox{SkyBlue}{Mirzakhani} & \colorbox{SkyBlue}{Q2}\\
+      \colorbox{VioletRed}{Noether} & \colorbox{VioletRed}{Q4}\\
+      \colorbox{Yellow}{Russell} & \colorbox{Yellow}{Q5}
+    \end{tabular}
+    \end{center}
+    \item
+      \begin{itemize}
+        \item Working in small groups improves your understanding and grades. There is significant evidence for this. For example, a 1999 meta-analysis of 37 different studies shows that
+              if students who are in the 50th percentile in a standardised test are exposed to small-group collaborative/cooperative teaching, then they move on average
+              up to the 70th percentile.\footnote{Springer, L., Stanne, M. E., \& Donovan, S. S. (1999). Effects of Small-Group Learning on Undergraduates in Science, Mathematics, Engineering, and Technology: A Meta-Analysis. \textit{Review of Educational Research} \textbf{69}(1), 21-51. \url{https://doi.org/10.3102/00346543069001021} }
+        \item This depends on you all working together respectfully. You are all adults.
+      \end{itemize}
+    \item \textbf{Split into groups of four}, made up of one person from each of the four mathematicians/colours/assigned questions. Find a whiteboard space around the room  and write your preferred
+          names (forename + surname) and student ID numbers at the top of the board. This week only, please also write your major/specialisation (e.g. mathematics, chemistry, etc.) up. These will hopefully be your
+          permanent groups for the rest of the semester.
+    \item I will go through question 6 on the sheet with a model answer to show you the level of writing/explanation that I expect.
+    \item \textbf{From next week}, in the first 20 minutes I will ask you to take turns presenting your preprepared solution to the rest of your group, taking about $5$ minutes each for this.
+          I thought it would be a bit awkward to start with it on the first day before you got to know each other so today we will be a bit more informal about things.
+    \item Work in your groups on the assigned problems on the whiteboards. I will wander around and give feedback. You should all have prepared an answer to the highlighted problem on your
+          sheet beforehand---everyone should have a go at leading your group through the problem you prepared. To get full marks for the attendance I need to see you talking about your
+          assigned problem on the whiteboard!
+  \end{enumerate}
+
+  \clearpage
+
+  \section{Model answer to Q6}
+  We are asked to show that, if $ a $ and $ b $ are real numbers such that $ ab $ is irrational, then either $ a $ is irrational or $ b $ is irrational.
+
+  The theorem we are to prove is an implication of the form $ P \implies Q $, where $ P $ is the statement `$ ab $ is irrational' and $ Q $ is the statement `$a$ is irrational or $b$ is irrational'.
+  This implication is logically equivalent to its contrapositive $ \neg Q \implies \neg P $, so it suffices to prove this instead.
+
+  Substituting the statements $ P $ and $ Q $ into the contrapositive and using the logical laws to simplify, we find that our original statement is equivalent to the
+  statement `if $a$ and $ b$ are rational, then $ ab $ is rational'.
+
+  So suppose that $ a $ and $ b $ are rational. Then there exist integers $ p,q,r,s $ so that $ a = p/q $ and $ b = r/s $. Hence $ ab = (p/q)(r/s) = (pr)/(qs) $. But $ pr $ and $ qs $
+  are products of integers and hence are integers. Therefore $ ab $ is rational, and we have proved the contrapositive of the desired theorem.
+
+\end{document}
