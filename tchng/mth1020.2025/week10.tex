@@ -1,0 +1,108 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usepackage{tikz}
+% \usepackage{enumitem}
+
+\title{MTH 1020 Week 10 tutorial}
+\author{Alex Elzenaar}
+
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+\begin{frame}{\inserttitle}
+\begin{enumerate}
+  \item Work through a problem from last week
+  \item Teaching evaluations
+  \item
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Week 9, Q6(b)}
+  \begin{block}{Question}
+    Find all local maxima and minima of $ f(t) = \sqrt{2-t} + t $.
+  \end{block}
+
+  \begin{itemize}
+    \item \textbf{What is the domain of $ f $?}
+    $f$ is defined everywhere that $ \sqrt{2-t} $ is defined, which is the interval $ (-\infty,2] $. So $ t = 2 $ is a critical point.
+    \item \textbf{Where is the derivative zero?}
+    Using the chain rule we find
+    \begin{displaymath}
+      f'(t) = -\frac{1}{2\sqrt{2-t}} + 1.
+    \end{displaymath}
+    So $ f'(t) = 0 \iff 2\sqrt{2-t} = 1 \iff 2-t = 1/4 \iff t = 7/4 $. So $ t = 7/4 $ is a critical point.
+    \item \textbf{Where is the derivative undefined?}
+    $f'(t) $ is defined everywhere $ \sqrt{2-t} \neq 0 $, which is everywhere except $ t = 2 $ (on the edge of the domain anyway).
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Week 9, Q6(b)}
+  \begin{block}{Question}
+    Find all local maxima and minima of $ f(t) = \sqrt{2-t} + t $.
+  \end{block}
+  \begin{itemize}
+    \item We computed
+          \begin{displaymath}
+            f'(t) = -\frac{1}{2\sqrt{2-t}} + 1
+          \end{displaymath}
+          and found two critical points, $ t = 2 $ and $ t = 7/4 $.
+    \item The second derivative is
+    \begin{displaymath}
+      f''(t) = -\frac{1}{4 (2-t)^{-3/2}}.
+    \end{displaymath}
+    \item At $ t = 7/4 $, $ f''(t) = -2 $. So the function is concave down and $ t=2 $ is a local max.
+    \item $ f''(2)$ is undefined so we need a different argument. Note that $ f''(t) $ is defined in the
+            entire open interval $ (-\infty,2) $ and $ f'(t) $ is negative when $ t > 7/4 $; in particular
+            as $ t \to 2 $, the function $ f $ is decreasing, so $ t=2 $ is a local minimum.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Key concepts so far}
+\begin{enumerate}
+  \item Limit calculations. Definitions of continuity, differentiability.
+    \begin{itemize}
+      \item \textbf{Being able to compute simple limits is a `pass' skill.}
+      \item Know different interpretations of derivative: rate of change, tangent line slope.
+      \item Have a zoo of weird examples e.g. $ x\sin(1/x) $, $ \lvert x \rvert $,...
+    \end{itemize}
+  \item Usual differentiation laws (chain and product laws, implicit differentiation) and derivatives of basic functions ($ x^n $, $ \sin x $, $ \cos x  $, $ \exp x $, $ \log x $, $ \lvert x \rvert $).
+    \begin{itemize}
+      \item Do enough examples that you don't need to think to compute $ f' $ from a formula for $ f $.
+      \item \textbf{Being able to compute derivatives mechanically is a `pass' skill.}
+    \end{itemize}
+  \item Intermediate value theorem: if $ f : [a,b] \to \R $ is a continuous function, $ f(a) < 0 $, and $ f(b) > 0 $, then there exists $ c \in [a,b] $ such that $ f(c) = 0 $
+  \item Extrema: definition of critical point, inflection point, concavity. Optimisation problems.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Teaching evaluations}
+\begin{enumerate}
+  \item I will hand out the evaluation sheets and then leave for 5 minutes to let you fill it in (feel free to talk amongst yourselves).
+  \item \textbf{Please keep the sheets anonymous. Do not write anything personally identifiable. Definitely do NOT put your name on the sheet.}
+  \item When I will come back I will get a volunteer to go around with an envelope for you to put your sheets into. Please fold them in half
+  so that the writing is not visible.
+  \item \textbf{The sheets will go to Simon to read, I don't get them until the end of the semester when all the grades are finalised.} Please bear this in mind,
+  if there is something specific you want to see changed during the semester it is better to talk to me or Simon directly if you are comfortable doing that, otherwise
+  the feedback will only help us next time we teach.
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}{\inserttitle}
+\begin{enumerate}
+  \item Get into groups of 3-4 people who all prepared a different question in advance.
+  \item Write your \textbf{preferred name} and \textbf{ID number} on the whiteboards so I can take attendance
+  \item Present your prepared question to each other as I come around, you should only take about 5min each for this.
+  \item Then get started on the other questions \textbf{in your groups}.
+  \item \textbf{At the end:} please erase the boards and return any markers etc that you used (you do not need to return the handouts)
+\end{enumerate}
+\end{frame}
+
+
+
+\end{document}

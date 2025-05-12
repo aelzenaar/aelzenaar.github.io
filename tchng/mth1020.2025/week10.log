@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.1)  6 MAY 2025 08:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.5.1)  12 MAY 2025 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**week9
-(./week9.tex
+**week10
+(./week10.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
@@ -744,8 +744,8 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count354
 \l__pdf_internal_box=\box82
-) (./week9.aux)
-\openout1 = `week9.aux'.
+) (./week10.aux)
+\openout1 = `week10.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -765,7 +765,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -823,10 +822,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 11.
- (./week9.out)
-(./week9.out)
+ (./week10.out)
+(./week10.out)
 \@outlinefile=\write5
-\openout5 = `week9.out'.
+\openout5 = `week10.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
@@ -904,33 +903,34 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texmf-dist/tex/latex/translator/translator-theorem-dictionary-Engli
 sh.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./week9.nav)
+) (./week10.nav)
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
 
-[2
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
-
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 52.
+ut line 38.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
+
+[2
+
+]
 
 [3
 
@@ -947,67 +947,46 @@ thkerncmss.
 [6
 
 ]
-
-[7
-
-]
-<sinx.png, id=320, 452.4102pt x 338.2236pt>
-File: sinx.png Graphic file (type png)
-<use sinx.png>
-Package pdftex.def Info: sinx.png  used on input line 154.
-(pdftex.def)             Requested size: 102.68962pt x 76.76793pt.
-
-
-[8
-
- <./sinx.png>]
-
-[9
-
-]
-
-[10
-
-]
 \tf@nav=\write6
-\openout6 = `week9.nav'.
+\openout6 = `week10.nav'.
 
 \tf@toc=\write7
-\openout7 = `week9.toc'.
+\openout7 = `week10.toc'.
 
 \tf@snm=\write8
-\openout8 = `week9.snm'.
+\openout8 = `week10.snm'.
 
- (./week9.aux)
+ (./week10.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `week9.out' has not changed.
-(rerunfilecheck)             Checksum: 18D38FB3A08D67681E3CFA6F6BE9FE52;209.
+Package rerunfilecheck Info: File `week10.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24833 strings out of 474645
- 491440 string characters out of 5759194
- 858802 words of memory out of 5000000
- 47332 multiletter control sequences out of 15000+600000
- 566544 words of font info for 63 fonts, out of 8000000 for 9000
+ 24784 strings out of 474645
+ 490034 string characters out of 5759194
+ 856798 words of memory out of 5000000
+ 47291 multiletter control sequences out of 15000+600000
+ 570276 words of font info for 77 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 128i,15n,123p,395b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on week9.pdf (10 pages, 196759 bytes).
+ 128i,15n,123p,396b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on week10.pdf (6 pages, 143005 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 22 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 13 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
