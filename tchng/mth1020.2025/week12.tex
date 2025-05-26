@@ -1,0 +1,174 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\setbeamertemplate{footline}{}
+\usepackage{tikz}
+\usepackage{physics}
+% \usepackage{enumitem}
+
+\title{MTH 1020 Week 12 tutorial}
+\author{Alex Elzenaar}
+
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+\begin{frame}{\inserttitle}
+\begin{enumerate}
+  \item Three worked integrals
+  \item Integration
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Theorem (Archimedes)}
+    The volume of the cone with height $ h $ and radius $ r $ is one-third the volume of the cylinder it lies in.
+  \end{block}
+  \begin{proof}
+    Slice the cone into discs.
+
+    By similar triangles, the disc at distance $ t $ from the tip of the cone has radius $ t/h \cdot r $. Hence it has area $ \pi (\frac{tr}{h})^2 $.
+
+    Therefore the volume of the cone is
+    \begin{displaymath}
+      \int_{0}^h \pi \left(\frac{tr}{h}\right)^2 \,dt = \frac{\pi r^2}{h^2} \int_0^h t^2\,dt = \frac{\pi r^2}{h^2} \cdot \frac{1}{3} h^3 = \frac{\pi}{3} r^2 h.
+    \end{displaymath}
+  \end{proof}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Integral 1}
+    \begin{displaymath}
+      \int \frac{1}{1+x^2} \, dx
+    \end{displaymath}
+  \end{block}
+  \pause
+  \textbf{Method 1.} Look at it and immediately see, `it is the derivative of $\arctan$'.
+
+  \pause\vspace{1ex}
+
+  \textbf{Method 2.} $ 1+x^2 $ looks like it might simplify using a trig identity: remember that $ \tan^2 + 1 = \sec^2 $.
+
+  \pause
+  Let $ x = \tan \theta $, so $ dx = \sec^2 \theta \, d\theta$. \pause Then
+  \begin{align*}
+    \int \frac{1}{1+x^2} \, dx &= \int \frac{1}{1+\tan^2 \theta} \sec^2 \theta  \, d\theta \\
+                               &= \int \frac{\sec^2 \theta}{\sec^2 \theta}  \, d\theta \\
+                               &= \int\, d\theta = \theta = \arctan x.
+  \end{align*}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Integral 2}
+    \begin{displaymath}
+      \int \arcsin x \, dx
+    \end{displaymath}
+  \end{block}
+  \pause
+  \textbf{Method 1.} Try substituting the only thing possible: $ \theta = \arcsin x $. This means $ x = \sin \theta $
+  and so $ dx = \cos \theta \, d\theta $.  \pause The integral becomes
+  \begin{displaymath}
+    \int \arcsin x \, dx = \int \theta \cos \theta \, d\theta
+  \end{displaymath}
+  \pause
+  This should look like an integration by parts thing. Take
+  \begin{displaymath}
+    \begin{array}{ll}
+      u = \theta & \uncover<5->{v = \sin\theta}\\
+      \uncover<5->{du = \, d\theta} & dv = \, \cos\theta \, d\theta
+    \end{array}
+  \end{displaymath}\pause\pause
+  and we end up with
+  \begin{align*}
+    \int \theta \cos \theta \, d\theta &= \theta \sin \theta - \int \sin \theta \, d\theta\\
+                                       &= \theta \sin \theta + \cos \theta\\
+                                       &= x \arcsin x + \cos \arcsin x\\
+                                       &= x \arcsin x + \sqrt{1-x^2}.
+  \end{align*}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Integral 2}
+    \begin{displaymath}
+      \int \arcsin x \, dx
+    \end{displaymath}
+  \end{block}
+  \pause
+  \textbf{Method 2.} Try integration by parts straight away: let
+  \begin{displaymath}
+    \begin{array}{ll}
+      u = \arcsin x & \uncover<3->{v = x}\\
+      \uncover<3->{du = (1-x^2)^{-1/2} \, dx} & dv = \, dx
+    \end{array}
+  \end{displaymath}
+  \pause\pause
+  so our integral becomes
+  \begin{equation}\tag{*}
+    \int \arcsin x \, dx = x\arcsin x - \int \frac{x}{\sqrt{1-x^2}} \,dx.
+  \end{equation}
+  \pause
+  Let $ w = 1-x^2 $, so $ dw = -2x \, dx $ and
+  \begin{align*}
+    \int \frac{x}{\sqrt{1-x^2}} \,dx &= \int \frac{\frac{1}{-2x} x }{\sqrt{w}} \, dw\\
+                                     &= -\frac{1}{2}\int \frac{1}{\sqrt{w}} \, dw\\
+                                     &= -\sqrt{w} = -\sqrt{1-x^2}.
+  \end{align*}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Integral 2}
+    \begin{displaymath}
+      \int \arcsin x \, dx
+    \end{displaymath}
+  \end{block}
+  \textit{\color{gray}....integrated by parts...}
+  \begin{equation}\tag{*}
+    \int \arcsin x \, dx = x\arcsin x - \int \frac{x}{\sqrt{1-x^2}} \,dx.
+  \end{equation}
+  Let $ w = 1-x^2 $, so $ dw = -2x \, dx $ and
+  \begin{align*}
+    \int \frac{x}{\sqrt{1-x^2}} \,dx &= \int \frac{\frac{1}{-2x} x }{\sqrt{w}} \, dw\\
+                                     &= -\frac{1}{2}\int \frac{1}{\sqrt{w}} \, dw\\
+                                     &= -\sqrt{w} = -\sqrt{1-x^2}.
+  \end{align*}
+  \pause
+  Substituting this back into (*) gives
+  \begin{displaymath}
+    \int \arcsin x \, dx = x\arcsin x + \sqrt{1-x^2}.
+  \end{displaymath}
+\end{frame}
+
+\begin{frame}{Key concepts (integration)}
+\begin{enumerate}
+  \item Definite integral as a Riemann sum. Indefinite integral as anti-differentiation.
+  \item Fundamental theorem of calculus.
+  \item Area calculation.
+  \item Techniques of integration:
+    \begin{enumerate}
+      \item Substitution (chain rule)
+      \item By parts (product rule)
+      \item By partial fractions
+      \item By trig identities
+    \end{enumerate}
+\end{enumerate}
+  \begin{block}{A special challenge integral}
+    \begin{displaymath}
+      \int \sqrt{\tan x} \, dx
+    \end{displaymath}
+  \end{block}
+\end{frame}
+
+
+
+
+\begin{frame}{\inserttitle}
+\begin{enumerate}
+  \item Get into groups of 3-4 people who all prepared a different question in advance.
+  \item Write your \textbf{preferred name} and \textbf{ID number} on the whiteboards so I can take attendance
+  \item Present your prepared question to each other as I come around, you should only take about 5min each for this.
+  \item Then get started on the other questions \textbf{in your groups}.
+  \item \textbf{At the end:} please erase the boards and return any markers etc that you used (you do not need to return the handouts)
+\end{enumerate}
+\end{frame}
+
+
+
+\end{document}
