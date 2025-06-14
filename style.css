@@ -20,7 +20,8 @@ h1, h2 {color: var(--dark)}
 dt {font-weight: 600;}
 dd {padding-bottom: .5ex}
 
-a[href] {text-decoration: none;}
+a[href] {text-decoration: none; color: #320A5C}
+a[href]:visited {color:#6D2229}
 a[href]:hover {text-decoration: underline}
 
 span.rightmargin {float:right; width:20%; margin-left:2em; clear:both;margin-top:2em }
