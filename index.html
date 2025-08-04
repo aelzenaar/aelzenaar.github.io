@@ -19,16 +19,16 @@
   <span style="float:right;width:20%;height:15em;margin-top:3em;margin-left:1em;margin-right:-5em"><img src="photo-new.jpg" alt="A portrait photo." style="max-width:100%;max-height:100%"/><br/><small>Here I am next to a castle</small></span>
   <h1>Alex Elzenaar</h1>
 
-  I (he/him) am a doctoral student in the School of Mathematics at <a href="https://www.monash.edu/science/schools/school-of-mathematics">Monash University</a> supervised by <a href="https://users.monash.edu.au/~jpurcell/">Jessica Purcell</a>. My research interests lie broadly in the intersection between classical geometry (in the style of <a href="https://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter">Coxeter</a>
+  I (he/him) am currently in the School of Mathematics at <a href="https://www.monash.edu/science/schools/school-of-mathematics">Monash University</a> advised by <a href="https://users.monash.edu.au/~jpurcell/">Jessica Purcell</a>. My research interests lie broadly in the intersection between classical geometry (in the style of <a href="https://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter">Coxeter</a>
   and <a href="https://en.wikipedia.org/wiki/William_Thurston">Thurston</a>) and algebra. At the moment I focus particularly on constructing and studying representations of groups which arise from geometry.
-  One can view this as a direct generalisation of the study of <a href="https://en.wikipedia.org/wiki/Wallpaper_group">wallpaper patterns</a>: the objects being studied are more complicated but
-  have similarly rich connections to number theory and crystallography, and their study additionally draws from other areas including algebraic geometry, low-dimensional topology, knot theory,
-  and conformal geometry. <!--I am also interested in visualisation of mathematical objects and their relation to art, and mathematical writing as a form of literature.-->
+  One can view this as a direct generalisation of the study of <a href="https://en.wikipedia.org/wiki/Wallpaper_group">wallpaper patterns</a>: the objects being studied are more complicated but have similarly
+  rich connections to other areas including <a href="https://en.wikipedia.org/wiki/Algebraic_geometry">algebraic geometry</a>, <a href="https://en.wikipedia.org/wiki/Low-dimensional_topology">low-dimensional
+  topology</a>, <a href="https://en.wikipedia.org/wiki/Knot_theory#Hyperbolic_invariants">knot theory</a>, and <a href="https://en.wikipedia.org/wiki/Conformal_geometry#M%C3%B6bius_geometry">conformal
+  geometry</a>. I am also interested in visualisation of mathematical objects.
 
   <p>
 
   <b>Email</b>: alexander.elzenaar@monash.edu &#x25AB; <a href="CV.pdf">Curriculum Vitae</a> &#x25AB; <a href="#publications">Publications</a> &#x25AB; <a href="#theses">Theses and dissertations</a> &#x25AB; <a href="youtube.png">I am a top result on YouTube!</a>
-<br/><a href="quotes.html">Older quotes</a>
 
   <div style="display:flex; border:none; padding:0; margin:0">
   <blockquote style="flex: 60%;">
@@ -68,12 +68,14 @@
 
   <p>
 
-  <div id="publications">
+  <div id="publications" style="display: flex;">
+  <div style="flex:48%;border:none;margin-top:0; margin-right:2%">
   <h2>Publications and preprints</h2>
   Full list with abstracts and detailed citations: <a href="listofpubs.pdf">PDF</a>
   <h3>Preprints</h3>
   <dl>
-    <dt><i>From disc patterns in the plane to character varieties of knot groups</i>, 2025.</dt><dd><a href="https://arxiv.org/abs/2503.13829">arXiv:2503.13829</a> [math.GT].
+    <dt><i>Peripheral subgroups of Kleinian groups</i>, 2025.</dt><dd><a href="https://arxiv.org/abs/2508.00297">arXiv:2508.00297</a> [math.GT].
+    <dt><i>From disc patterns in the plane to character varieties of knot groups</i>, 2025.</dt><dd><a href="https://arxiv.org/abs/2503.13829">arXiv:2503.13829</a> [math.GT]. <a href="https://github.com/aelzenaar/disc-patterns-and-knots">Associated computer code on GitHub</a>.
     <dt><i>Changing topological type of compression bodies through cone manifolds</i>, 2024.</dt><dd><a href="https://arxiv.org/abs/2411.17940">arXiv:2411.17940</a> [math.GT].
     <dt><i>On thin Heckoid and generalised triangle groups in \( \mathrm{PSL}(2,\mathbb{C}) \)</i> (with Gaven Martin and Jeroen Schillewaert), 2024.</dt><dd><a href="https://arxiv.org/abs/2409.04438">arXiv:2409.04438</a> [math.GR].
     <dt><i>Bounding deformation spaces of 2-generator Kleinian groups</i> (with Jianhua Gong, Gaven Martin, and Jeroen Schillewaert), 2024.</dt><dd><a href="https://arxiv.org/abs/2405.15970">arXiv:2405.15970</a> [math.CV].
@@ -104,7 +106,7 @@
   </ol>
   </details>
 
-  <hr/>
+  </div><div style="flex:48%; border:none;margin-top:0">
 
   <h2>Selected talks</h2>
   <dl>
@@ -172,6 +174,49 @@
     <p>*will probably speak</p>
   </details>
   </div>
+  </div>
+
+
+  <div id="peripheral">
+  <span style="float:right;margin-left:2em;"><img src="kg/grafted_domain.png" alt="What the fundamental domains look like" style="max-width:100%"/></span>
+  <h2>Peripheral subgroups of Kleinian groups</h2>
+
+  Here is the <a href="https://arxiv.org/abs/2508.00297">preprint</a>, and here is how I explained it to a friend of mine:
+  <blockquote style="width: 60%">
+  You have a group \(G\), and you know it is generated by some matrices in \( \mathrm{PSL}(2,\mathbb{C}) \). You also know that \( \mathbb{H}^3/G \) is a nice enough manifold ("geometrically finite"). If you wiggle the entries of the generators, the result is a group \(G'\) with the property that if you squint, \( \mathbb{H}^3/G \)' looks the same as \( \mathbb{H}^3/G \). (The technical term is, they are quasi-isometric.) I can say with polynomial inequalities over the field \(\mathbb{R}\) (i.e. semialgebraically) how far you can wiggle \(G'\) before it stops looking like \(G\) when you squint. This is Main Theorem B. The way I do this is by finding the polygon with which \(G\) tiles the Riemann sphere&mdash;this is Main Theorem A&mdash;and then defining a way to wiggle the polygon along with the matrices, so that as you get a new group G' you also get a new polygon. The semi-algebraic sets are the sets that detect when the polygon collides with itself &amp; stops tiling the Riemann sphere. This is detecting "peripheral structures" because the Riemann sphere is the boundary of \(\mathbb{H}^3\), so I am studying what is happening "at the periphery" of the manifold as you wiggle the metric. This is important because I can cover the entire set of possible metrics for the topological manifold \( \mathbb{H}^3/G \) with these sets. If you take a random group now you can check whether it lies in any of the sets, and if it does then you know the group is discrete. This is interesting since discreteness checking is a very hard open problem (Section 1.3).
+  </blockquote>
+
+  The proofs involve careful analysis of fundamental domains of Kleinian groups using hyperbolic geometry of the ends of their quotient manifolds. These domains are generalised
+  Ford domains, in the sense that their sides are circles which lie in the pencils determined by the isometric circles of elements of the group; but we choose special elements
+  which are `visible from the periphery' instead of taking all elements in the group like with a normal Ford domain. The deformations of these domains are studied with techniques
+  from real algebraic geometry and Möbius geometry.
+
+
+  See also talks at <a href="kg/jm.pdf">the Joint Meeting of the NZMS, AustMS, and AMS</a> and <a href="farey/8aac.pdf">the 8th Australian Algebra Conference</a>. Note,
+  both those talks were on preliminary versions of this work and do not entirely capture the spirit of the final results.
+
+  </div>
+
+
+  <div id="cones">
+  <h2>Cone manifolds and discrete geometry of indiscrete groups</h2>
+  <span style="float:right;width:30%;margin-left:2em;"><img src="cones/conedeform.png" alt="An indiscrete deformation of a genus two function group with controlled cone angle." style="max-width:100%"/></span>
+  The abstract I submitted for my poster at the <a href="https://ms-meet-2024.blogs.auckland.ac.nz/">joint meeting of the NZMS, AustMS and AMS</a> is a good introduction to what I am thinking about currently:
+
+  <blockquote style="width: 60%">
+  Tilings of the plane or of more general 2D geometries are very classical and central mathematical objects. Their symmetry groups are discrete, and the quotients of the tilings by their symmetry groups are in the best case smooth surfaces and in the worst case surfaces with some bits that look like paper cones: take a disc of paper, cut a triangle out, and glue the resulting sides together. If you start with a tiling of the Euclidean or hyperbolic plane, the angles must be submultiples of \( \pi \). But if you're cutting triangles out of a piece of paper, there is no physical reason that you can't pick any angle you want: you still get a cone. Unwrap the corresponding surface, and you get a subset of the plane: it's just that the symmetry group is no longer discrete and if you try to make a tiling from it everything will overlap. Lots of abstract geometric group theory fails in this new setting, but if all you care about is taking a piece of paper, cutting angles out, and gluing a bunch of copies of the results together regardless, how much theory can you recover? We present some computer experiments and preliminary results in 3D: instead of gluing sheets of paper with corners, we glue imaginary blocks of hyperbolic space with corners.
+  </blockquote>
+
+  <ul>
+    <li>Poster: <a href="cones/conference_poster_6.pdf">Limit sets of cone manifolds</a>.
+    <li>Preprint: <a href="https://arxiv.org/abs/2411.17940">Changing topological type of compression bodies through cone manifolds</a>.
+    <li><a href="kg/conformal/putative.html">Fun animated version</a> of the pictures on the poster and in the preprint.
+  </ul>
+
+  More to come in 2025.
+
+  </div>
+
 
   <div id="teich">
   <h2>Deformation spaces of rank two Kleinian groups</h2>
@@ -214,23 +259,6 @@
     <li>A detailed abstract combinatorial study of certain polynomials which control the geometry of these groups: <a href="https://doi.org/10.4171/GGD/832">The combinatorics of Farey words and their traces</a> (joint with Martin and Schillewaert), <a href="farey/fareys_general.txt">table to denominator 10</a>.
     <li>Applications to the enumeration of arithmetic groups: <a href="https://arxiv.org/abs/2409.04438">On Thin Heckoid and Generalised Triangle Groups in \( \mathrm{PSL}(2,\mathbb{C}) \)</a> (joint with Martin and Schillewaert).
   </ul>
-
-  </div>
-
-  <div id="cones">
-  <h2>Cone manifolds and discrete geometry of indiscrete groups</h2>
-  <span style="float:right;width:30%;margin-left:2em;"><img src= (I have an account on some of these only to have control over an automated profile)"cones/conedeform.png" alt="An indiscrete deformation of a genus two function group with controlled cone angle." style="max-width:100%"/></span>
-  The abstract I submitted for my poster at the <a href="https://ms-meet-2024.blogs.auckland.ac.nz/">joint meeting of the NZMS, AustMS and AMS</a> is a good introduction to what I am thinking about currently:
-
-  <blockquote style="width: 60%">
-  Tilings of the plane or of more general 2D geometries are very classical and central mathematical objects. Their symmetry groups are discrete, and the quotients of the tilings by their symmetry groups are in the best case smooth surfaces and in the worst case surfaces with some bits that look like paper cones: take a disc of paper, cut a triangle out, and glue the resulting sides together. If you start with a tiling of the Euclidean or hyperbolic plane, the angles must be submultiples of \( \pi \). But if you're cutting triangles out of a piece of paper, there is no physical reason that you can't pick any angle you want: you still get a cone. Unwrap the corresponding surface, and you get a subset of the plane: it's just that the symmetry group is no longer discrete and if you try to make a tiling from it everything will overlap. Lots of abstract geometric group theory fails in this new setting, but if all you care about is taking a piece of paper, cutting angles out, and gluing a bunch of copies of the results together regardless, how much theory can you recover? We present some computer experiments and preliminary results in 3D: instead of gluing sheets of paper with corners, we glue imaginary blocks of hyperbolic space with corners.
-  </blockquote>
-
-  <ul>
-    <li>Poster: <a href="cones/conference_poster_6.pdf">Limit sets of cone manifolds</a>; preprint: <a href="https://arxiv.org/abs/2411.17940">Changing topological type of compression bodies through cone manifolds</a>.
-  </ul>
-
-  More to come in 2025.
 
   </div>
 
@@ -368,7 +396,7 @@
     Other web presences (some unwanted):
     <a href="https://orcid.org/0000-0002-3047-8529">ORCID</a>  &#x25AB;
     <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1550235">MathSciNet</a> &#x25AB;
-    <a href="https://zbmath.org/?q=ia%3Aelzenaar.alex">zbMath</a> &#x25AB;
+    <a href="https://zbmath.org/authors/elzenaar.alex">zbMath</a> &#x25AB;
     <a href="https://scholar.google.com/citations?user=qP0j7LAAAAAJ">Google Scholar</a> &#x25AB;
     <a href="https://www.semanticscholar.org/author/Alexander-Elzenaar/2139662221">Semantic Scholar</a> &#x25AB;
     <a href="https://github.com/aelzenaar">GitHub</a> &#x25AB;
