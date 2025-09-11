@@ -34,6 +34,13 @@ table, th, td {
     padding: .5em;
 }
 
+
+@media screen and (max-width: 768px) {
+    div {
+        display:inherit !important;
+    }
+}
+
 /* Below: old-style font and colours */
 
 /*@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap");
