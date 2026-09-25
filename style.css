@@ -1,19 +1,21 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900"); */
 
 :root {
-    --dark: #170312;
-    --light: #eaebed;
-    --vlight: #FFFFFF;
+    --dark: #0D1F2D;
+    --light: #F5E9E0;
+    --light2:#FAF4F0;
+    --vlight: #FFF;
 }
 
-body { padding-left: 10%; padding-top:3em; font-family: 'Inter', sans-serif;
+body { padding-left: 10%; padding-top:3em; font-family: 'Newsreader', serif;
     font-optical-sizing: auto;
-/*     font-weight: 400; */
+    font-weight: 400;
+    font-size:1.1em;
     color: var(--dark); margin-right: 15% ; line-height: 1.43; background: var(--vlight); }
 blockquote {max-width:70%; border-left: thick solid var(--dark); padding:.5em 1em; background: var(--light);}
-div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:.25em; border: 2px solid var(--dark); border-radius: 5px; overflow:auto; }
+div {margin-left:-2em; margin-top:2em; padding-left:2em; padding-right:2em; padding-bottom:1em; margin-bottom:1em; padding-top:.25em; border: 2px solid var(--dark); border-radius: 5px; overflow:auto; background: var(--light2) }
 .fav:before {content:"✵";color:green;font-size:200%}
 h1, h2 {color: var(--dark)}
 
@@ -26,7 +28,7 @@ a[href]:hover {text-decoration: underline}
 
 span.rightmargin {float:right; width:20%; margin-left:2em; clear:both;margin-top:2em }
 
-/* .MathJax { font-size: 2ex !important; } */
+.MathJax { font-size: 2ex !important; }
 
 table, th, td {
     border: 1px solid var(--dark);
