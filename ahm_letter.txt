@@ -1,0 +1,18 @@
+These companies claim to "build AI in service of humanity" (https://openai.com/index/built-to-benefit-everyone-our-plan/), "not to decide which scientific problems deserve attention or try to solve them all ourselves" (https://openai.com/index/chatgpt-for-academic-researchers/) and "empower scientists and mathematicians with tools that accelerate discovery" (https://openai.com/index/ten-advances-in-mathematics/). So why are they spending so much real money trying to out-run mathematicians (for instance, trying to outcompete postdocs like Julia Stadlmann), rather than simply providing tools and letting mathematicians use them? The answer is simple: these companies are transparently lying about their motivations. Mathematicians are a small global market, and they have to reach a US$1.5 trillion market valuation, so they see us only as a credulous and naive source of advertising wins that they can sell on to the actual customers for their products.
+
+Announcements of this form (that 100 `open problems' have been `solved', without giving any details) are both very hurtful to the standing of mathematics as a profession and solidify the fact that the
+large LLM companies are using the mathematics community as a pawn in their PR and advertising campaigns. Feeding the narrative that mathematics as a field consists of a list of problems which must be
+solved, and then once we have done so we can all go home, ignores two facts:
+
+  (i)  Even mathematicians who primarily work on short and easy to state problems are less interested in having a formal verified proof than in understanding deeply why the thing is true or false.
+       Communicating this understanding (as well as describing the motivation for, and choosing interesting consequence of, the problems) is a creative process.
+  (ii) many mathematicians do not work on short and easy to state problems, and instead spend most of their time navigating a broad space of facts (often easy to prove) and trying to gather them
+       together into a broader picture of some mathematical landscape; for these mathematicians, trying to mechanise the process ignores the entire point of their work, which is to have a human
+       perspective on facts which are true or false regardless of human existence. Again, this is a creative process: the output is a human perspective, not a list of things which are true and a certificate of truth.
+
+Anyone who has ever dealt with undergraduate students (or the general public) knows that most people have a very limited understanding of this, and indeed believe that the job of mathematicians is to
+mechanically solve a list of problems for some higher authority, as this is all they have ever experienced themselves. Companies with such political and financial power reinforcing this, and pushing a
+message that this job can now be done by machines will only lead to a loss of respect for mathematicians and further reduction in funding and job opportunities for young people.
+
+My view of mathematics as a field and a community has always been that it values people who spend a very long time (years or decades) thinking about ideas until they reach understanding. I will continue to work
+this way regardless of how many large software companies try to turn the field into a competition to produce as many proofs as possible as quickly as the arXiv will take them.
